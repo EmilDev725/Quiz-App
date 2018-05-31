@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Example (Safe)" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="Example (Safe)" PROJECT_NAME="playhaven-sdk-ios" TARGET_NAME="Example (Safe)" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="playhaven-sdk-ios" RUN_TARGET_NAME="Example (Safe)" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <envs />
+    <method />
+  </configuration>
+</component>

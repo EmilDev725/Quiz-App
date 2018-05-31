@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CJSONScanner scanJSONDictionary:error:]:CJSONScanner.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self currentCharacter]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[VSUtils isIPhone5Screen]:VSUtils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainScreen.bounds.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MagicQuiz loadGameData]:MagicQuiz.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "returnData">
+            </PersistentString>
+            <PersistentString
+               value = "[[NSBundle mainBundle] resourcePath]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[VSUtils isIPad]:VSUtils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "UI_USER_INTERFACE_IDIOM()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CJSONDeserializer deserializeAsDictionary:error:]:CJSONDeserializer.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[CDataScanner scannerWithData:]:CDataScanner.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "theScanner.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

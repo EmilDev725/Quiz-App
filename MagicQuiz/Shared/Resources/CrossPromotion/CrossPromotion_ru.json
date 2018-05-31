@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "index": "11",
+            "name": "Крокодил",
+            "description": "Покажи загаданное слово с помощью жестов",
+            "imageUrl": "croco.jpg",
+            "appstoreUrl": "https://itunes.apple.com/ru/app/krokodil-igra-dla-veseloj/id642755778?ls=1&mt=8"
+        },
+        {
+            "index": "3",
+            "name": "Студент №1",
+            "description": "Успешная учеба в ВУЗе",
+            "imageUrl": "student.jpg",
+            "appstoreUrl": "https://itunes.apple.com/ru/app/student-1-uspesnaa-uceba-v/id547887995?mt=8"
+        },
+        {
+            "index": "5",
+            "name": "Программист iPhone",
+            "description": "Тестирование знаний по мобильной разработке",
+            "imageUrl": "dev.jpg",
+            "appstoreUrl": "https://itunes.apple.com/ru/app/ios-developer-challenge/id586010705?mt=8"
+        }
+    ]
+}
