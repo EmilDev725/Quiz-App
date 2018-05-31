@@ -1,0 +1,2696 @@
+{
+    "questions": [
+                  {
+                  "id": "0001",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Apparluk",
+                  "answers": [
+                              "Qutsissormiutaq",
+                              "Oqaatsoq",
+                              "Apparluk",
+                              "Eqqoqqortooq"
+                              ],
+                  "imageUrl": "apparluk_alk.png",
+                  "publisher": "Alk",
+                  },
+                  {
+                  "id": "0002",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Saarfaarsunnaq",
+                  "answers": [
+                              "Saarfaarsunnaq",
+                              "Aqisseq",
+                              "Apparluk",
+                              "Narsarmiutaq"
+                              ],
+                  "imageUrl": "saarfaarsunnaq_bairdsryle.png",
+                  "publisher": "Bairdsryle",
+                  },
+                  {
+                  "id": "0003",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Qutsissormiutaq",
+                  "answers": [
+                              "Uppik",
+                              "Nerlernaarsuk",
+                              "Naajarluk",
+                              "Qutsissormiutaq"
+                              ],
+                  "imageUrl": "qutsissormiutaq_bjerglaerke.png",
+                  "publisher": "Bairdsryle",
+                  },
+                  {
+                  "id": "0004",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Nerleq",
+                  "answers": [
+                              "Nerleq",
+                              "Nipaalaq",
+                              "Eqaluk",
+                              "Nasalik"
+                              ],
+                  "imageUrl": "nerleq_blisgaas.png",
+                  "publisher": "Blisgås",
+                  },
+                  {
+                  "id": "0005",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Pakkaluaq tungujortoq",
+                  "answers": [
+                              "Nimeriaq",
+                              "Serfaq",
+                              "Kussattarnaq",
+                              "Pakkaluaq tungujortoq"
+                              ],
+                  "imageUrl": "Pakkaluaq_tungujortoq_blaafugl.png",
+                  "publisher": "Blåfugl",
+                  },
+                  {
+                  "id": "0006",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Tunnulik",
+                  "answers": [
+                              "Tikaagullik",
+                              "Tunnulik",
+                              "Uvaq",
+                              "Aaveq"
+                              ],
+                  "imageUrl": "tunnulik_blaahval.png",
+                  "publisher": "Blåhval",
+                  },
+                  {
+                  "id": "0007",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Saarullernaq",
+                  "answers": [
+                              "Saarullernaq",
+                              "Kanajoq",
+                              "Eqaluk",
+                              "Nattoralik"
+                              ],
+                  "imageUrl": "saarullernaq_Blaahvilling.png",
+                  "publisher": "Blåhvilling",
+                  },
+				  {
+                  "id": "0008",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Nerlernarnaq",
+                  "answers": [
+                              "Tulugaq",
+                              "Nerleq",
+                              "Orpimmiutaq",
+                              "Nerlernarnaq"
+                              ],
+                  "imageUrl": "nerlernarnaq_bramgaas.png",
+                  "publisher": "Bramgås",
+                  },
+				  {
+                  "id": "0009",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Tinguttooq",
+                  "answers": [
+                              "Saarullik",
+                              "Tinguttooq",
+                              "Aaveq",
+                              "Nipaalaq"
+                              ],
+                  "imageUrl": "tinguttooq_brosme.png",
+                  "publisher": "Brosme",
+                  },
+				  {
+                  "id": "0010",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Saarullik takilimaartoq",
+                  "answers": [
+                              "Eqalussuaq",
+                              "Tunnulik",
+                              "Kanajoq",
+                              "Saarullik takilimaartoq"
+                              ],
+                  "imageUrl": "saarullik_takilimaartoq_byrkelange.png",
+                  "publisher": "Byrkelange",
+                  },
+				  {
+                  "id": "0011",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Nerlernaarsuk",
+                  "answers": [
+                              "Nerlernaarsuk",
+                              "Kissaviarsuk",
+                              "Naajavaarsuk",
+                              "Nerleq"
+                              ],
+                  "imageUrl": "nerlernaarsuk_canadagaas.png",
+                  "publisher": "Canadagås",
+                  },
+				  {
+                  "id": "0012",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Nipaalaq",
+                  "answers": [
+                              "Nipaalaq",
+                              "Minngoq",
+                              "Qasigiaq",
+                              "Ippernaq"
+                              ],
+                  "imageUrl": "nipaalaq_cikade.png",
+                  "publisher": "Cikade",
+                  },
+				  {
+                  "id": "0013",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Niviugak timmiuaartoq",
+                  "answers": [
+                              "Siutaasalik",
+                              "Siorarsiooq",
+                              "Ukaleq",
+                              "Niviugak timmiuaartoq"
+                              ],
+                  "imageUrl": "niviugak_timmiuaartoq_danseflue.png",
+                  "publisher": "Danseflue",
+                  },
+				  {
+                  "id": "0014",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Ippernaq Niviortartoq",
+                  "answers": [
+                              "Tikaagulliusaaq",
+                              "Sikannertuusaq",
+                              "Ippernaq Niviortartoq",
+                              "Narlumukaaq"
+                              ],
+                  "imageUrl": "ippernaq_niviortartoq_dansemyg.png",
+                  "publisher": "Dansemyg",
+                  },
+				  {
+                  "id": "0015",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Sigguttooq",
+                  "answers": [
+                              "Qajorlak",
+                              "Taateraaq",
+                              "Sigguttooq",
+                              "Saarfaarsunnaq"
+                              ],
+                  "imageUrl": "sigguttooq_dobbeltbekkasin.png",
+                  "publisher": "Dobbeltbekkasin",
+                  },
+				  {
+                  "id": "0016",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Sissap aasiaa",
+                  "answers": [
+                              "Sissap aasiaa",
+                              "Niutooq",
+                              "Pisseriaq",
+                              "Orpimmiutaq"
+                              ],
+                  "imageUrl": "sissap_aasiaa_strand_dvaergedderkop.png",
+                  "publisher": "Dværgedderkop",
+                  },
+				  {
+                  "id": "0017",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Uumanikitsoq",
+                  "answers": [
+                              "Minnguaraq",
+                              "Serfaq",
+                              "Timmik",
+                              "Uumanikitsoq"
+                              ],
+                  "imageUrl": "uumanikitsoq_doegnflue.png",
+                  "publisher": "Døgnflue",
+                  },
+				  {
+                  "id": "0018",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Miteq siorartooq",
+                  "answers": [
+                              "Nerleq",
+                              "Qeerlutooq",
+                              "Aqisseq",
+                              "Miteq siorartooq"
+                              ],
+                  "imageUrl": "miteq_siorartooq_edderfugl.png",
+                  "publisher": "Edderfugl",
+                  },
+				  {
+                  "id": "0019",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Masarsuup aasiaa nigalik",
+                  "answers": [
+                              "Masarsuup aasiaa nigalik",
+                              "Niisarnaq",
+                              "Sissap aasiaa",
+                              "Niutooq"
+                              ],
+                  "imageUrl": "masarsuup_aasiaa_nigalik_enghjulspinder.png",
+                  "publisher": "Enghjulspinder",
+                  },
+				  {
+                  "id": "0020",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Kussannaq",
+                  "answers": [
+                              "Orpimmiutaq",
+                              "Qeerlutooq",
+                              "Qutsissormiutaq",
+                              "Kussannaq"
+                              ],
+                  "imageUrl": "kussannaq_engpiber.png",
+                  "publisher": "Engpiber",
+                  },
+				  {
+                  "id": "0021",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Kukilik taartoq",
+                  "answers": [
+                              "Kukilik taartoq",
+                              "Aaveq",
+                              "Eqalussuaq",
+                              "Qiioqi"
+                              ],
+                  "imageUrl": "kukilik_taartoq_fabricius_sorthaj.png",
+                  "publisher": "Sorthaj",
+                  },
+				  {
+                  "id": "0022",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Tikaagulliusaaq",
+                  "answers": [
+                              "Tunnulik",
+                              "Kigutilissuaq",
+                              "Suluppaagaq",
+                              "Tikaagulliusaaq"
+                              ],
+                  "imageUrl": "tikaagulliusaaq_finhval.png",
+                  "publisher": "Finhval",
+                  },
+				  {
+                  "id": "0023",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Niviugak qatsissormiu",
+                  "answers": [
+                              "Putooruttoq",
+                              "Niviugak qatsissormiu",
+                              "Tinguttooq",
+                              "Niviugaq niutooq"
+                              ],
+                  "imageUrl": "niviugak_qatsissormiu_fjeldflue.png",
+                  "publisher": "Fjeldflue",
+                  },
+				  {
+                  "id": "0024",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Aqisseq",
+                  "answers": [
+                              "Tulugaq",
+                              "Aaveq",
+                              "Palugaq",
+                              "Aqisseq"
+                              ],
+                  "imageUrl": "aqisseq_fjeldrype.png",
+                  "publisher": "Fjeldrype",
+                  },
+				  {
+                  "id": "0025",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Palugaq",
+                  "answers": [
+                              "Palugaq",
+                              "Taliffak",
+                              "Tuttup kumaa",
+                              "Ammassassuaq"
+                              ],
+                  "imageUrl": "palugaq_fjeldspinder.png",
+                  "publisher": "Fjeldspinder",
+                  },
+				  {
+                  "id": "0026",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Eqaluk",
+                  "answers": [
+                              "Eqaluk",
+                              "Nipisa",
+                              "Uvaq",
+                              "Saarullik"
+                              ],
+                  "imageUrl": "eqaluk_fjeldoerred.png",
+                  "publisher": "Fjeldørred",
+                  },
+				  {
+                  "id": "0027",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Uvaq",
+                  "answers": [
+                              "Saarullik",
+                              "Ammassak",
+                              "Uvaq",
+                              "Alanngialasoq"
+                              ],
+                  "imageUrl": "uvaq_fjordtorsk.png",
+                  "publisher": "Fjordtorsk",
+                  },
+				  {
+                  "id": "0028",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Oquk utinnikuusangasoq",
+                  "answers": [
+                              "Sikannertuusaq",
+                              "Nanoq",
+                              "Imeqqutaalaq",
+                              "Oquk utinnikuusangasoq"
+                              ],
+                  "imageUrl": "oquk_utinnikuusangasoq_floejsmide.png",
+                  "publisher": "Fløjsmide",
+                  },
+				  {
+                  "id": "0029",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Sikannertuusaq",
+                  "answers": [
+                              "Kakilisak",
+                              "Alleq",
+                              "Unnaaleeraq",
+                              "Sikannertuusaq"
+                              ],
+                  "imageUrl": "sikannertuusaq_froetaege.png",
+                  "publisher": "Frøtæge",
+                  },
+				  {
+                  "id": "0030",
+                  "text": "Uumasoq Sunaava",
+                  "right": "Siuteroq qalipaatsoq",
+                  "answers": [
+                              "Siuteroq qalipaatsoq",
+                              "Narlumukaaq",
+                              "Putooruttoq",
+                              "Naajavaarsuk"
+                              ],
+                  "imageUrl": "siuteroq_qalipaatsoq_glassnegl.png",
+                  "publisher": "Glassnegl",
+                  },
+				  {
+                  "id": "0031",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niisarnaq",
+                  "answers": [
+                              "Alanngialasoq",
+                              "Eqalussuaq",
+                              "Putooruttoq",
+                              "Niisarnaq"
+                              ],
+                  "imageUrl": "niisarnaq_grindehval.png",
+                  "publisher": "Grindehval",
+                  },
+				  {
+                  "id": "0032",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Eqalussuaq",
+                  "answers": [
+                              "Eqalussuaq",
+                              "Tarsialukaaq",
+                              "Saarullernaq",
+                              "Papikkaaq"
+                              ],
+                  "imageUrl": "eqalussuaq_groenlandshaj.png",
+                  "publisher": "Grønlandshaj",
+                  },
+				  {
+                  "id": "0033",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Aataaq",
+                  "answers": [
+                              "Natsersuaq",
+                              "Natseq",
+                              "Aataaq",
+                              "Aaveq"
+                              ],
+                  "imageUrl": "aataaq_groenlandssael.png",
+                  "publisher": "Grønlandssæl",
+                  },
+				  {
+                  "id": "0034",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qeerlutooq",
+                  "answers": [
+                              "Tulugaq",
+                              "Nattoralik",
+                              "Miteq",
+                              "Qeerlutooq"
+                              ],
+                  "imageUrl": "qeerlutooq_graaand.png",
+                  "publisher": "Gråand",
+                  },
+				  {
+                  "id": "0035",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naajarujussuaq",
+                  "answers": [
+                              "Nasalik",
+                              "Naajarujussuaq",
+                              "Alleq",
+                              "Nujaki"
+                              ],
+                  "imageUrl": "naajarujussuaq_graamaage.png",
+                  "publisher": "Gråmåge",
+                  },
+				  {
+                  "id": "0036",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Orpimmiutaq",
+                  "answers": [
+                              "Orpimmiutaq",
+                              "Uugooq",
+                              "Paaq",
+                              "Saarfaarsuk"
+                              ],
+                  "imageUrl": "orpimmiutaq_graasisken.png",
+                  "publisher": "Gråsisken",
+                  },
+				  {
+                  "id": "0037",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nerleq siggukitsoq",
+                  "answers": [
+                              "Nerleq",
+                              "Qutsissormiutaq",
+                              "Nerlernaarsuk",
+                              "Nerleq siggukitsoq"
+                              ],
+                  "imageUrl": "nerleq_siggukitsoq_kortnaebbet_gaas.png",
+                  "publisher": "Kortnæbbet gås",
+                  },
+				  {
+                  "id": "0038",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Narlumukaaq",
+                  "answers": [
+                              "Narlumukaaq",
+                              "Timmik",
+                              "Najorpaligaq",
+                              "Ukaliatsiaq"
+                              ],
+                  "imageUrl": "narlumukaaq_halsbaandslemming.png",
+                  "publisher": "Halsbåndslemming",
+                  },
+				  {
+                  "id": "0039",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Imaviup kanajua",
+                  "answers": [
+                              "Issittup kanajua",
+                              "Qasigiaq",
+                              "Minnguaraq",
+                              "Imaviup kanajua"
+                              ],
+                  "imageUrl": "imaviup_kanajua_havulk.png",
+                  "publisher": "Havulk",
+                  },
+				  {
+                  "id": "0040",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Najorpaligaq",
+                  "answers": [
+                              "Qeeraq",
+                              "Aataaq",
+                              "Najorpaligaq",
+                              "Qeeraaraq"
+                              ],
+                  "imageUrl": "najorpaligaq_blaa_havkat.png",
+                  "publisher": "Blå havkat",
+                  },
+				  {
+                  "id": "0041",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qeeraq",
+                  "answers": [
+                              "Qeeraq",
+                              "Putooruttoq",
+                              "Qeeraaraq",
+                              "Tulugaq"
+                              ],
+                  "imageUrl": "qeeraq_plettet_havkat.png",
+                  "publisher": "Plettet havkat",
+                  },
+				  {
+                  "id": "0042",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qeeraaraq",
+                  "answers": [
+                              "Qeeraq",
+                              "Imeqqutaalaq",
+                              "Ammassak",
+                              "Qeeraaraq"
+                              ],
+                  "imageUrl": "qeeraaraq_stribet_havkat.png",
+                  "publisher": "Stribet havkat",
+                  },
+				  {
+                  "id": "0043",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Suluppaagarnaq",
+                  "answers": [
+                              "Saarullernaq",
+                              "Kakilisak",
+                              "Suluppaagarnaq",
+                              "Ammassassuaq"
+                              ],
+                  "imageUrl": "suluppaagarnaq_havkvabbe.png",
+                  "publisher": "Havkabbe",
+                  },
+				  {
+                  "id": "0044",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Alleq",
+                  "answers": [
+                              "Alleq",
+                              "Appa",
+                              "Niaqortooq",
+                              "Tuullik"
+                              ],
+                  "imageUrl": "alleq_havlit.png",
+                  "publisher": "Havlit",
+                  },
+				  {
+                  "id": "0045",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Imeqqutaalaq",
+                  "answers": [
+                              "Naajavaarsuk",
+                              "Tulugaq",
+                              "Kussattarnaq",
+                              "Imeqqutaalaq"
+                              ],
+                  "imageUrl": "imeqqutaalaq_havterne.png",
+                  "publisher": "Havterne",
+                  },
+				  {
+                  "id": "0046",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Putooruttoq",
+                  "answers": [
+                              "Putooruttoq",
+                              "Nimeriaq",
+                              "Kiinaaleeraq",
+                              "Tunnulik"
+                              ],
+                  "imageUrl": "putooruttoq_havtobis.png",
+                  "publisher": "Havtobis",
+                  },
+				  {
+                  "id": "0047",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nattoralik",
+                  "answers": [
+                              "Tulugaq",
+                              "Tikaagulliusaaq",
+                              "Nattoralik",
+                              "Miteq"
+                              ],
+                  "imageUrl": "nattoralik_havoern.png",
+                  "publisher": "Havørn",
+                  },
+				  {
+                  "id": "0048",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qaleralik",
+                  "answers": [
+                              "Nataarnaq",
+                              "Allernaq",
+                              "Oquutarnaq",
+                              "Qalera"
+                              ],
+                  "imageUrl": "qaleralik_hellefisk.png",
+                  "publisher": "Hellefisk",
+                  },
+				  {
+                  "id": "0049",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nataarnaq",
+                  "answers": [
+                              "Nataarnaq",
+                              "Qaleralik",
+                              "Allernaq",
+                              "Ammassak"
+                              ],
+                  "imageUrl": "nataarnaq_helleflynder.png",
+                  "publisher": "Helleflynder",
+                  },
+				  {
+                  "id": "0050",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Issittup igutssasua",
+                  "answers": [
+                              "Niaqortooq",
+                              "Aamanganiaq",
+                              "Sikannertuusaq",
+                              "Issittup igutssasua"
+                              ],
+                  "imageUrl": "issittup_igutssasua_polar_humlebi.png",
+                  "publisher": "Polar humlebi",
+                  },
+				  {
+                  "id": "0051",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kakilisak",
+                  "answers": [
+                              "Kakilisak",
+                              "Eqalugaasaq",
+                              "Misaqqarnaq",
+                              "Natsersuaq"
+                              ],
+                  "imageUrl": "kakilisak_hundestejle.png",
+                  "publisher": "Hundestejle",
+                  },
+				  {
+                  "id": "0052",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Aaveq",
+                  "answers": [
+                              "Tikaagulliusaaq",
+                              "Ussuk",
+                              "Aaveq",
+                              "Qasigiaq"
+                              ],
+                  "imageUrl": "aaveq_hvalros.png",
+                  "publisher": "Hundestejle",
+                  },
+				  {
+                  "id": "0053",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qilalugaq qaqortaq",
+                  "answers": [
+                              "Nanoq",
+                              "Qilalugaq qaqortaq",
+                              "Natsersuaq",
+                              "Kiinaaleeraq"
+                              ],
+                  "imageUrl": "qilalugaq_qaqortaq_hvidhval.png",
+                  "publisher": "Hvidhval",
+                  },
+				  {
+                  "id": "0054",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niaqortooq",
+                  "answers": [
+                              "Nasalik",
+                              "Papikkaaq",
+                              "Niaqortooq",
+                              "Nerleq"
+                              ],
+                  "imageUrl": "niaqortooq_hvinand.png",
+                  "publisher": "Hvinand",
+                  },
+				  {
+                  "id": "0055",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tarsialukaaq",
+                  "answers": [
+                              "Tarsialukaaq",
+                              "Niutooq",
+                              "Palugaq",
+                              "Sikannertooq"
+                              ],
+                  "imageUrl": "tarsialukaaq_hvirvler.png",
+                  "publisher": "Hvirvler",
+                  },
+				  {
+                  "id": "0056",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nasalik",
+                  "answers": [
+                              "Qiioqi",
+                              "Saarfaarsunnaq",
+                              "Nasalik",
+                              "Papikkaaq"
+                              ],
+                  "imageUrl": "nasalik_haettemaage.png",
+                  "publisher": "Hættemåge",
+                  },
+				  {
+                  "id": "0057",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Pakkaluaq sungaartoq",
+                  "answers": [
+                              "Pakkaluaq takornartaq",
+                              "Pakkaluaq sungaartoq",
+                              "Palugaq",
+                              "Pakkaluaq qillaalasortalik"
+                              ],
+                  "imageUrl": "pakkaluaq_sungaartoq_arktisk_hoesommerfugl.png",
+                  "publisher": "Arktisk høsommerfugl",
+                  },
+				  {
+                  "id": "0058",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Pakkaluaq takornartaq",
+                  "answers": [
+                              "Palugaq",
+                              "Pakkaluaq qillaalasortalik",
+                              "Pakkaluaq takornartaq",
+                              "Pakkaluaq takornartaq"
+                              ],
+                  "imageUrl": "pakkaluaq_takornartaq_ildfugl.png",
+                  "publisher": "Ildfugl",
+                  },
+				  {
+                  "id": "0059",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nanoq",
+                  "answers": [
+                              "Amaroq",
+                              "Tuullik",
+                              "Nanoq",
+                              "Tuttu"
+                              ],
+                  "imageUrl": "nanoq_isbjoern.png",
+                  "publisher": "Isbjørn",
+                  },
+				  {
+                  "id": "0060",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tuullik",
+                  "answers": [
+                              "Tuullik",
+                              "Serfaq",
+                              "Appa",
+                              "Nattoralik"
+                              ],
+                  "imageUrl": "tuullik_islom.png",
+                  "publisher": "Islom",
+                  },
+				  {
+                  "id": "0061",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naajavaarsuk",
+                  "answers": [
+                              "Naajarluk",
+                              "Naajarujussuaq",
+                              "Naajavaarsuk",
+                              "Taateraaq"
+                              ],
+                  "imageUrl": "naajavaarsuk_ismaage.png",
+                  "publisher": "Ismåge",
+                  },
+				  {
+                  "id": "0062",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Alanngialasoq",
+                  "answers": [
+                              "Saarullernaq",
+                              "Misaqqarnaq",
+                              "Amaroq",
+                              "Alanngialasoq"
+                              ],
+                  "imageUrl": "alanngialasoq_isprikfisk.png",
+                  "publisher": "Isprikfisk",
+                  },
+				  {
+                  "id": "0063",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Eqalugaasaq",
+                  "answers": [
+                              "Eqalugaasaq",
+                              "Alanngialasoq",
+                              "Kissaviarsuk",
+                              "Ammassassuaq"
+                              ],
+                  "imageUrl": "eqalugaasaq_istorsk.png",
+                  "publisher": "Istorsk",
+                  },
+				  {
+                  "id": "0064",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kissaviarsuk",
+                  "answers": [
+                              "Kiinaaleeraq",
+                              "Taliffak",
+                              "Sikannertooq",
+                              "Kissaviarsuk"
+                              ],
+                  "imageUrl": "kissaviarsuk_jagtfalk.png",
+                  "publisher": "Jagtfalk",
+                  },
+				  {
+                  "id": "0065",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Palugaq",
+                  "answers": [
+                              "Pakkaluaq",
+                              "Palugaq",
+                              "Kapisilik",
+                              "Ukaliatsiaq"
+                              ],
+                  "imageUrl": "palugaq_qasertoq_jordugle.png",
+                  "publisher": "Jordugle",
+                  },
+				  {
+                  "id": "0066",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kigutilissuaq",
+                  "answers": [
+                              "Kigutilissuaq",
+                              "Arfevik",
+                              "Tikaagullik",
+                              "Aaveq"
+                              ],
+                  "imageUrl": "kigutilissuaq_kaskelot.png",
+                  "publisher": "Kaskelot",
+                  },
+				  {
+                  "id": "0067",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Isunngaq",
+                  "answers": [
+                              "Isunngaq",
+                              "Tulugaq",
+                              "Naajarluk",
+                              "Kissaviarsuk"
+                              ],
+                  "imageUrl": "isunngaq_almindelig_kjove.png",
+                  "publisher": "Almindelig kjove",
+                  },
+				  {
+                  "id": "0068",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Papikkaaq",
+                  "answers": [
+                              "Uungooq",
+                              "Qilanngaq",
+                              "Papikkaaq",
+                              "Naajavaraq"
+                              ],
+                  "imageUrl": "papikkaaq_lille_kjove.png",
+                  "publisher": "Lille kjove",
+                  },
+				  {
+                  "id": "0069",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Natsersuaq",
+                  "answers": [
+                              "Natsersuaq",
+                              "Aataaq",
+                              "Natseq",
+                              "Aaveq"
+                              ],
+                  "imageUrl": "natsersuaq_klapmyds.png",
+                  "publisher": "Klapmys",
+                  },
+				  {
+                  "id": "0070",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nerlernaq",
+                  "answers": [
+                              "Qeerlutoornaq",
+                              "Nerlernaq",
+                              "Tuluigarnaq",
+                              "Nerleq"
+                              ],
+                  "imageUrl": "nerlernaq_knortegaas.png",
+                  "publisher": "Knortegås",
+                  },
+				  {
+                  "id": "0071",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Miteq sioraki",
+                  "answers": [
+                              "Miteq sioraki",
+                              "Qarsaarnaq",
+                              "Isunngarsuaq",
+                              "Qaarsaaq"
+                              ],
+                  "imageUrl": "miteq_sioraki_kongeederfugl.png",
+                  "publisher": "Kongeederfugl",
+                  },
+				  {
+                  "id": "0072",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Aasiak assagiargungasoq",
+                  "answers": [
+                              "Aasiak assagiargungasoq",
+                              "Niutooq",
+                              "Asiak sineriarmiu",
+                              "Sissap aasiaa"
+                              ],
+                  "imageUrl": "aasiak_assagiarsungasoq_krabbeedderkop.png",
+                  "publisher": "Krabbeedderkop",
+                  },
+				  {
+                  "id": "0073",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qeerlutoornaq",
+                  "answers": [
+                              "Qeerlutoornaq",
+                              "Nerleq",
+                              "Qeerlutooq",
+                              "Alleq"
+                              ],
+                  "imageUrl": "qeerlutoornaq_krikand.png",
+                  "publisher": "Krikand",
+                  },
+				  {
+                  "id": "0074",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Misaqqarnaq",
+                  "answers": [
+                              "Saarullernaq",
+                              "Uvaq",
+                              "Eqalugaasaq",
+                              "Misaqqarnaq"
+                              ],
+                  "imageUrl": "misaqqarnaq_kuller.png",
+                  "publisher": "Kuller",
+                  },
+				  {
+                  "id": "0075",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Aasiak sisamanik toornilik",
+                  "answers": [
+                              "Minngoq",
+                              "Sikannertooq",
+                              "Qilanngaq",
+                              "Aasiak sisamanik toornilik"
+                              ],
+                  "imageUrl": "aasiak_sisamanik_toornilik_kvadratedderkop.png",
+                  "publisher": "Kvadratedderkop",
+                  },
+				  {
+                  "id": "0076",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Aasiak sineriarmiu",
+                  "answers": [
+                              "Qarsaarnaq",
+                              "Aasiak sineriarmiu",
+                              "Aasiak sisamanik toornilik",
+                              "Taliffak"
+                              ],
+                  "imageUrl": "aasiaksineriammiu_kystjaeger.png",
+                  "publisher": "Kystjæger",
+                  },
+				  {
+                  "id": "0077",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kapisilik",
+                  "answers": [
+                              "Eqaluk",
+                              "Saarullik",
+                              "Eqalugaasaq",
+                              "Kapisilik"
+                              ],
+                  "imageUrl": "kapisilik_laks.png",
+                  "publisher": "Laks",
+                  },
+				  {
+                  "id": "0078",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tuluigarnaq",
+                  "answers": [
+                              "Qiioqi",
+                              "Tuluigarnaq",
+                              "Orpimmiutaq",
+                              "Alanngialasoq"
+                              ],
+                  "imageUrl": "tuluigarnaq_landsvale.png",
+                  "publisher": "Landsvale",
+                  },
+				  {
+                  "id": "0079",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Saarullik atamasoq",
+                  "answers": [
+                              "Saarullik atamasoq",
+                              "Saarullernaq",
+                              "Misaqqarnaq",
+                              "Saviup puua"
+                              ],
+                  "imageUrl": "saarullik_atamasoq_lange.png",
+                  "publisher": "Lange",
+                  },
+				  {
+                  "id": "0080",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Pilaatalik avannarleq",
+                  "answers": [
+                              "Isunngarsuaq",
+                              "Anarnaq",
+                              "Pilaatalik avannarleq",
+                              "Imminnguaq"
+                              ],
+                  "imageUrl": "pilaatalik_avannarleq_nordlige_langebarn.png",
+                  "publisher": "Nordlige langebarn",
+                  },
+				  {
+                  "id": "0081",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Saviup puua",
+                  "answers": [
+                              "Saviup puua",
+                              "Sigguttooq",
+                              "Aataaq",
+                              "Tuluigarnaq"
+                              ],
+                  "imageUrl": "saviup_puua_plettet_langebarn.png",
+                  "publisher": "Plettet langebarn",
+                  },
+				  {
+                  "id": "0082",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qarsaarnaq",
+                  "answers": [
+                              "Nerlernaarsuk",
+                              "Qarsaarnaq",
+                              "Kussannaq",
+                              "Sigguttooq"
+                              ],
+                  "imageUrl": "qarsaarnaq_graastrubet_lappedykker.png",
+                  "publisher": "Gråsrubet lappedykker",
+                  },
+				  {
+                  "id": "0083",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nujaki",
+                  "answers": [
+                              "Misaqqarnaq",
+                              "Qilanngaq",
+                              "Tinguttooq",
+                              "Nujaki"
+                              ],
+                  "imageUrl": "nujaki_nordisk_lappedykker.png",
+                  "publisher": "Nordisk lappedykker",
+                  },
+				  {
+                  "id": "0084",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ammassak",
+                  "answers": [
+                              "Ammassak",
+                              "Saarullernaq",
+                              "Qilalugaq",
+                              "Ammassassuaq"
+                              ],
+                  "imageUrl": "ammassak_lodde.png",
+                  "publisher": "Lodde",
+                  },
+				  {
+                  "id": "0085",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qarsaaq",
+                  "answers": [
+                              "Qarsaaq",
+                              "Taliffak",
+                              "Allernaq",
+                              "Qarsaarnaq"
+                              ],
+                  "imageUrl": "qarsaaq_roedstrubet_lom.png",
+                  "publisher": "Rødstrubet lom",
+                  },
+				  {
+                  "id": "0086",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Appa sigguttooq",
+                  "answers": [
+                              "Appa",
+                              "Taateraaq",
+                              "Apparluk",
+                              "Appa sigguttooq"
+                              ],
+                  "imageUrl": "appa_sigguttooq_lomvie.png",
+                  "publisher": "Lomvie",
+                  },
+				  {
+                  "id": "0087",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qilanngaq",
+                  "answers": [
+                              "Anarnaq",
+                              "Kiinaaleeraq",
+                              "Qilanngaq",
+                              "Sigguttooq"
+                              ],
+                  "imageUrl": "qilanngaq_soepapegoeje.png",
+                  "publisher": "Søpapegøje",
+                  },
+				  {
+                  "id": "0088",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Sikannertooq",
+                  "answers": [
+                              "Sikannertooq",
+                              "Aamanganiaq",
+                              "Oquutarnaq",
+                              "Tarsialukaaq"
+                              ],
+                  "imageUrl": "sikannertooq_loebebille.png",
+                  "publisher": "Løbebille",
+                  },
+				  {
+                  "id": "0089",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ukaliatsiaq",
+                  "answers": [
+                              "Narlumukaaq",
+                              "Ukaleq",
+                              "Ukaliatsiaq",
+                              "Qiioqi"
+                              ],
+                  "imageUrl": "ukaliatsiaq_hermelin.png",
+                  "publisher": "Hermelin",
+                  },
+				  {
+                  "id": "0090",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qaqulluk",
+                  "answers": [
+                              "Naajaannaq",
+                              "Naajarluk",
+                              "Qussuk",
+                              "Qaqulluk"
+                              ],
+                  "imageUrl": "qaqulluk_mallemuk.png",
+                  "publisher": "Mallemuk",
+                  },
+				  {
+                  "id": "0091",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Aamanganiaq",
+                  "answers": [
+                              "Aamanganiaq",
+                              "Narlumukaaq",
+                              "Nasalik",
+                              "Sikannertuusaq"
+                              ],
+                  "imageUrl": "aamanganiaq_mariehoene.png",
+                  "publisher": "Mariehøne",
+                  },
+				  {
+                  "id": "0092",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niisa",
+                  "answers": [
+                              "Niisarnaq",
+                              "Arfivik",
+                              "Niisa",
+                              "Tikaagulliusaaq"
+                              ],
+                  "imageUrl": "niisa_marsvin.png",
+                  "publisher": "Marsvin",
+                  },
+				  {
+                  "id": "0093",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niutooq",
+                  "answers": [
+                              "Aasiak",
+                              "Pisseriaq",
+                              "Niutooq",
+                              "Tuluigarnaq"
+                              ],
+                  "imageUrl": "niutooq_mejer.png",
+                  "publisher": "Mejer",
+                  },
+				  {
+                  "id": "0094",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Isunngarsuaq",
+                  "answers": [
+                              "Isunngaq",
+                              "Naajarluk",
+                              "Isunngarsuaq",
+                              "Nattoralik"
+                              ],
+                  "imageUrl": "isunngarsuaq_mellemkjove.png",
+                  "publisher": "Mellemkjove",
+                  },
+				  {
+                  "id": "0095",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Unnaaleeraq",
+                  "answers": [
+                              "Unnaaleeraq",
+                              "Ippernaq",
+                              "Niviugaq",
+                              "Sikannertuusaq"
+                              ],
+                  "imageUrl": "unnaaleraq_mitte.png",
+                  "publisher": "Mitte",
+                  },
+				  {
+                  "id": "0096",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Uugooq",
+                  "answers": [
+                              "Eqqoqqortooq",
+                              "Uugooq",
+                              "Palugaq",
+                              "Uppik"
+                              ],
+                  "imageUrl": "uugooq_mosehornugle.png",
+                  "publisher": "Mosehornugle",
+                  },
+				  {
+                  "id": "0097",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Siuteroq masarsummiu",
+                  "answers": [
+                              "Siuteroq masarsummiu",
+                              "Sikannertuusaq",
+                              "Siuteroq qalipaatsoq",
+                              "Sigguttooq"
+                              ],
+                  "imageUrl": "siuteroq_masarsummiu_mosesnegl.png",
+                  "publisher": "Mosesnegl",
+                  },
+				  {
+                  "id": "0098",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Umimmak",
+                  "answers": [
+                              "Tuttu",
+                              "Amaroq",
+                              "Umimmak",
+                              "Nanoq"
+                              ],
+                  "imageUrl": "umimmak_moskusokse.png",
+                  "publisher": "Moskusokse",
+                  },
+				  {
+                  "id": "0099",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qullugiaq",
+                  "answers": [
+                              "Allernaaraq",
+                              "Qussaannaq",
+                              "Qullugiaq",
+                              "Nimeriaq"
+                              ],
+                  "imageUrl": "qullugiaq_mosorm.png",
+                  "publisher": "Mosorm",
+                  },
+				  {
+                  "id": "0100",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Uiloq peqqungasoq",
+                  "answers": [
+                              "Uiloq peqqungasoq",
+                              "Ussuk",
+                              "Kakilisak",
+                              "Eqalugaasaq"
+                              ],
+                  "imageUrl": "uiloq_peqqungasoq_muslingekrebs.png",
+                  "publisher": "Muslingekrebs",
+                  },
+				  {
+                  "id": "0101",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naajaannaq",
+                  "answers": [
+                              "Naajaannaq",
+                              "Siorarsiooq",
+                              "Naajarluk",
+                              "Miteq"
+                              ],
+                  "imageUrl": "naajaannaq_hvidvinget_maage.png",
+                  "publisher": "Hvidvinget måge",
+                  },
+				  {
+                  "id": "0102",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naajavaaq",
+                  "answers": [
+                              "Naajarujussuaq",
+                              "Tulugaq",
+                              "Naajavaaq",
+                              "Saarfaarsuk"
+                              ],
+                  "imageUrl": "naajavaaq_inuitmaage.png",
+                  "publisher": "Inuitmåge",
+                  },
+				  {
+                  "id": "0103",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qilalugaq qernertaq",
+                  "answers": [
+                              "Qilalugaq qaqortaq",
+                              "Tikaagulliusaaq",
+                              "Misaqqarnaq",
+                              "Qilalugaq qernertaq"
+                              ],
+                  "imageUrl": "qilalugaq_qernertaq_narhval.png",
+                  "publisher": "Narhval",
+                  },
+				  {
+                  "id": "0104",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Arfevik",
+                  "answers": [
+                              "Kigutilissuaq",
+                              "Arfevik",
+                              "Eqalussuaq",
+                              "Tikaagulliusaaq"
+                              ],
+                  "imageUrl": "arfivik_nordkaper.png",
+                  "publisher": "Nordkaper",
+                  },
+				  {
+                  "id": "0105",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Anarnaq",
+                  "answers": [
+                              "Niisarnaq",
+                              "Qipoqqaq",
+                              "Aarluk",
+                              "Anarnaq"
+                              ],
+                  "imageUrl": "anarnaq_Naebhval.png",
+                  "publisher": "Næbhval",
+                  },
+				  {
+                  "id": "0106",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naluumasortoq",
+                  "answers": [
+                              "Naluumasortoq",
+                              "Saarfaarsussuaq",
+                              "Qajorlak",
+                              "Siorarsiooq"
+                              ],
+                  "imageUrl": "naluumasortoq_odinshane.png",
+                  "publisher": "Odinshane",
+                  },
+				  {
+                  "id": "0107",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Issittup kanajua",
+                  "answers": [
+                              "Issittup kanajua",
+                              "Nipisarluk",
+                              "Kanajoq kapinartulik",
+                              "Imaviup kanajua"
+                              ],
+                  "imageUrl": "issittup_kanajua_paddeulk.png",
+                  "publisher": "Paddeulk",
+                  },
+				  {
+                  "id": "0108",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Pakkaluaq qillaalasortalik",
+                  "answers": [
+                              "Pakkaluaq qillaalasortalik",
+                              "Ukiup pakkalugaa",
+                              "Pakkaluaq tungujortoq",
+                              "Nipaalaq"
+                              ],
+                  "imageUrl": "pakkaluaq_qillaalasortalik_perlemorfugl.png",
+                  "publisher": "Perlemorfugl",
+                  },
+				  {
+                  "id": "0109",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qeerlutoornarnaq",
+                  "answers": [
+                              "Qeerlutoornarnaq",
+                              "Nerlernaarsuk",
+                              "Tuluigarnaq",
+                              "Allernaaraq"
+                              ],
+                  "imageUrl": "qeerlutoornarnaq_pibeand.png",
+                  "publisher": "Pibeand",
+                  },
+				  {
+                  "id": "0110",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qussuk",
+                  "answers": [
+                              "Kiinaaleeraq",
+                              "Qussuk",
+                              "Allernaq",
+                              "Miteq"
+                              ],
+                  "imageUrl": "qussuk_pibesvane.png",
+                  "publisher": "Pibesvane",
+                  },
+				  {
+                  "id": "0111",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Eqalussuaq kukilik",
+                  "answers": [
+                              "Eqalussuaq",
+                              "Imminnguaaraq",
+                              "Allernaaraq",
+                              "Eqalussuaq kukilik"
+                              ],
+                  "imageUrl": "eqalussuaq_kukilik_pighaj.png",
+                  "publisher": "Pighaj",
+                  },
+				  {
+                  "id": "0112",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Avannaarsuata aasiaa",
+                  "answers": [
+                              "Avannaarsuata aasiaa",
+                              "Niutooq sineriarmiu",
+                              "Niutooq",
+                              "Sikannertooq"
+                              ],
+                  "imageUrl": "avannaarsuata_aasiaa_polarjaeger.png",
+                  "publisher": "Polarjæger",
+                  },
+				  {
+                  "id": "0113",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Appa",
+                  "answers": [
+                              "Apparluk",
+                              "Serfaq",
+                              "Taateraaq",
+                              "Appa"
+                              ],
+                  "imageUrl": "appa_polarlomvie.png",
+                  "publisher": "Polarlomvie",
+                  },
+				  {
+                  "id": "0113",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Terianniaq",
+                  "answers": [
+                              "Narlumukaaq",
+                              "Terianniaq",
+                              "Nanoq",
+                              "Amaroq"
+                              ],
+                  "imageUrl": "terianniaq_polarraev.png",
+                  "publisher": "Polarræv",
+                  },
+				  {
+                  "id": "0114",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Eqalugaasaq",
+                  "answers": [
+                              "Eqalugaasaq",
+                              "Saarullernaq",
+                              "Saarullik",
+                              "Uvaq"
+                              ],
+                  "imageUrl": "eqalugaasaq_polartorsk.png",
+                  "publisher": "Polartorsk",
+                  },
+				  {
+                  "id": "0115",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Amaroq",
+                  "answers": [
+                              "Terianniaq",
+                              "Nanoq",
+                              "Umimmak",
+                              "Amaroq"
+                              ],
+                  "imageUrl": "amaroq_polarulv.png",
+                  "publisher": "Polarulv",
+                  },
+				  {
+                  "id": "0116",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tuujuk",
+                  "answers": [
+                              "Tuujuk",
+                              "Siorarsiooq",
+                              "Orpimmiutaq",
+                              "Tulugaq"
+                              ],
+                  "imageUrl": "tuujuk_praestekrave.png",
+                  "publisher": "Præstekrave",
+                  },
+				  {
+                  "id": "0117",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niviugak qatigalik",
+                  "answers": [
+                              "Ippernaq",
+                              "Niviugak qatigalik",
+                              "Niutooq",
+                              "Niviugak"
+                              ],
+                  "imageUrl": "niviugak_qatigalik_pukkelflue.png",
+                  "publisher": "Pukkelflue",
+                  },
+				  {
+                  "id": "0118",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qipoqqaq",
+                  "answers": [
+                              "Qilalugaq qernertaq",
+                              "Tikaagullik",
+                              "Niisarnaq",
+                              "Qipoqqaq"
+                              ],
+                  "imageUrl": "qipoqqaq_pukkelhval.png",
+                  "publisher": "Pukkelhval",
+                  },
+				  {
+                  "id": "0119",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tulugaq",
+                  "answers": [
+                              "Tuluigarnaq",
+                              "Tulugaq",
+                              "Siutaasalik",
+                              "Aamanganiaq"
+                              ],
+                  "imageUrl": "tulugaq_ravn.png",
+                  "publisher": "Ravn",
+                  },
+				  {
+                  "id": "0120",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Saarfaarsussuaq",
+                  "answers": [
+                              "Saarfaarsuk",
+                              "Siorarsiooq",
+                              "Orpimmiutaq",
+                              "Saarfaarsussuaq"
+                              ],
+                  "imageUrl": "saarfaarsussuaq_smaaspove.png",
+                  "publisher": "Småspove",
+                  },
+				  {
+                  "id": "0121",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ussuk",
+                  "answers": [
+                              "Ussuk",
+                              "Natsersuaq",
+                              "Aasiak",
+                              "Aaveq"
+                              ],
+                  "imageUrl": "ussuk_remmesael.png",
+                  "publisher": "Remmesæl",
+                  },
+				  {
+                  "id": "0122",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tuttu",
+                  "answers": [
+                              "Amaroq",
+                              "Tuttu",
+                              "Umimmak",
+                              "Ukaleq"
+                              ],
+                  "imageUrl": "tuttu_rensdyr.png",
+                  "publisher": "Rensdyr",
+                  },
+				  {
+                  "id": "0123",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Taateraaq",
+                  "answers": [
+                              "Naajaannaq",
+                              "Naajavaraq",
+                              "Taateraaq",
+                              "Nattoralik"
+                              ],
+                  "imageUrl": "taateraq_ride.png",
+                  "publisher": "Ride",
+                  },
+				  {
+                  "id": "0124",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Siutaasalik",
+                  "answers": [
+                              "Siutaasalik",
+                              "Saarullernaq",
+                              "Nerlernaarsuk",
+                              "Qilanngaq"
+                              ],
+                  "imageUrl": "siutaasalik_ringbug.png",
+                  "publisher": "Ringbug",
+                  },
+				  {
+                  "id": "0125",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Natseq",
+                  "answers": [
+                              "Qussuk",
+                              "Aataaq",
+                              "Natsersuaq",
+                              "Natseq"
+                              ],
+                  "imageUrl": "natseq_ringsael.png",
+                  "publisher": "Ringsæl",
+                  },
+				  {
+                  "id": "0126",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Issittup allernaa",
+                  "answers": [
+                              "Issittup allernaa",
+                              "Allernaaraq",
+                              "Eqalussuup nulia",
+                              "Allernaq"
+                              ],
+                  "imageUrl": "issittup_allernaa_arktisk_rokke.png",
+                  "publisher": "Arktisk rokke",
+                  },
+				  {
+                  "id": "0127",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Allernaaraq",
+                  "answers": [
+                              "Allernaaraq",
+                              "Eqalussuup nulia",
+                              "Issittup allernaa",
+                              "Eqalussuaq"
+                              ],
+                  "imageUrl": "allernaaraq_fyllasrokke.png",
+                  "publisher": "Fyllas rokke",
+                  },
+				  {
+                  "id": "0128",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Allernaq",
+                  "answers": [
+                              "Eqalussuup nulia",
+                              "Allernaq",
+                              "Nataarnaq",
+                              "Papikkaaq"
+                              ],
+                  "imageUrl": "allernaq_hvid_rokke.png",
+                  "publisher": "Hvid rokke",
+                  },
+				  {
+                  "id": "0129",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Eqalussuup nulia",
+                  "answers": [
+                              "Eqalussuup nulia",
+                              "Allernaaraq",
+                              "Timmik",
+                              "Issittup allernaa"
+                              ],
+                  "imageUrl": "eqalussuup_nulia_tornhalet_rokke.png",
+                  "publisher": "Tornhalet rokke",
+                  },
+				  {
+                  "id": "0130",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naajannguaq",
+                  "answers": [
+                              "Naajannguaq",
+                              "Naajarluk",
+                              "Saarfaarsunnaq",
+                              "Kiinaaleeraq"
+                              ],
+                  "imageUrl": "naajannguaq_rosenmaage.png",
+                  "publisher": "Rosenmåge",
+                  },
+				  {
+                  "id": "0131",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Sikannertooq sullinerniaq",
+                  "answers": [
+                              "Niutooq",
+                              "Ivik",
+                              "Masarsuup aasiaa",
+                              "Sikannertooq sullinerniaq"
+                              ],
+                  "imageUrl": "sikannertooq_sullinerniaq_rovbille.png",
+                  "publisher": "Rovbille",
+                  },
+				  {
+                  "id": "0132",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Saarfaarsorlak",
+                  "answers": [
+                              "Saarfaarsorlak",
+                              "Saarfaarsussuaq",
+                              "Saarfaarsuk",
+                              "Saarfaarsunnaq"
+                              ],
+                  "imageUrl": "saarfaarsorlak_ryle.png",
+                  "publisher": "Ryle",
+                  },
+				  {
+                  "id": "0133",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Saarfaarsussuaq",
+                  "answers": [
+                              "Saarfaarsunnaq",
+                              "Oqaatsoq",
+                              "Kussattarnaq",
+                              "Saarfaarsussuaq"
+                              ],
+                  "imageUrl": "saarfaarsuusaq_hvidrygget_ryle.png",
+                  "publisher": "Hvidrygget ryle",
+                  },
+				  {
+                  "id": "0134",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qajorlak",
+                  "answers": [
+                              "Qajorlak",
+                              "Sigguttooq",
+                              "Naluumasortoq",
+                              "Siorarsiooq"
+                              ],
+                  "imageUrl": "qajorlak_islandsk_ryle.png",
+                  "publisher": "Islandsk ryle",
+                  },
+				  {
+                  "id": "0135",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Saarfaarsuk",
+                  "answers": [
+                              "Saarfaarsussuaq",
+                              "Orpimmiutaq",
+                              "Apparluk",
+                              "Saarfaarsuk"
+                              ],
+                  "imageUrl": "saarfaarsuk_sortgraa_ryle.png",
+                  "publisher": "Sortgrå ryle",
+                  },
+				  {
+                  "id": "0136",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Suluppaagaq mikineq",
+                  "answers": [
+                              "Imminnguaaraq",
+                              "Suluppaagaq mikineq",
+                              "Kangoq",
+                              "Suluppaagaq angineq"
+                              ],
+                  "imageUrl": "suluppaagaq_mikineq_lille_roedfisk.png",
+                  "publisher": "Lille rødfisk",
+                  },
+				  {
+                  "id": "0137",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Suluppaagaq angineq",
+                  "answers": [
+                              "Misaqqarnaq",
+                              "Suluppaagaq mikineq",
+                              "Eqalugaasaq",
+                              "Suluppaagaq angineq"
+                              ],
+                  "imageUrl": "suluppaagaq_angineq_stor_roedfisk.png",
+                  "publisher": "Stor rødfisk",
+                  },
+				  {
+                  "id": "0138",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Taateraarnaq",
+                  "answers": [
+                              "Taateraarnaq",
+                              "Naajarluk",
+                              "Taateraaq",
+                              "Tulugaq"
+                              ],
+                  "imageUrl": "taateraarnaq_sabinemaage.png",
+                  "publisher": "Sabinemåge",
+                  },
+				  {
+                  "id": "0139",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Siorarsiooq",
+                  "answers": [
+                              "Oqaatsoq",
+                              "Siorarsiooq",
+                              "Tuluigarnaq",
+                              "Saarfaarsussuaq"
+                              ],
+                  "imageUrl": "siorarsiooq_sandloeber.png",
+                  "publisher": "Sandløber",
+                  },
+				  {
+                  "id": "0140",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tikaagulliusaarnaq",
+                  "answers": [
+                              "Tikaagullik",
+                              "Arfivik",
+                              "Niisarnaq",
+                              "Tikaagulliusaarnaq"
+                              ],
+                  "imageUrl": "tikaagulliusaarnaq_sejhval.png",
+                  "publisher": "Sejhval",
+                  },
+				  {
+                  "id": "0141",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ammassassuaq",
+                  "answers": [
+                              "Ammassassuaq",
+                              "Ammassak",
+                              "Saarullernaq",
+                              "Nimeriaq"
+                              ],
+                  "imageUrl": "ammassassuaq_sild.png",
+                  "publisher": "Sild",
+                  },
+				  {
+                  "id": "0142",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naajarluusaq",
+                  "answers": [
+                              "Naajarluk",
+                              "Taateraarnaq",
+                              "Naajarluusaq",
+                              "Nattoralik"
+                              ],
+                  "imageUrl": "naajarluusaq_sildemaage.png",
+                  "publisher": "Sildemåge",
+                  },
+				  {
+                  "id": "0143",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Orpimmiutarsuaq",
+                  "answers": [
+                              "Orpimmiutaq",
+                              "Sigguttooq",
+                              "Naluumasortoq",
+                              "Orpimmiutarsuaq"
+                              ],
+                  "imageUrl": "orpimmiutarsuaq_sjagger.png",
+                  "publisher": "Sjagger",
+                  },
+				  {
+                  "id": "0144",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Paaq",
+                  "answers": [
+                              "Paaq",
+                              "Nujaki",
+                              "Qaarsaaq",
+                              "Niaqortooq"
+                              ],
+                  "imageUrl": "paaq_skallesluger.png",
+                  "publisher": "Skallesluger",
+                  }
+				  {
+                  "id": "0145",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Oqaatsoq",
+                  "answers": [
+                              "Oqaatsoq",
+                              "Timmik",
+                              "Nasalik",
+                              "Tuullik"
+                              ],
+                  "imageUrl": "oqaatsoq_skarv.png",
+                  "publisher": "Skarv",
+                  }
+				  {
+                  "id": "0146",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Siuterornaq",
+                  "answers": [
+                              "Siuterornaq",
+                              "Narlumukaaq",
+                              "Imminnguaaraq",
+                              "Siuteroq"
+                              ],
+                  "imageUrl": "siuterornaq_skivesnegl.png",
+                  "publisher": "Skivesnegl",
+                  }
+				  {
+                  "id": "0147",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Imminnguaq",
+                  "answers": [
+                              "Nipisarluk",
+                              "Kangoq",
+                              "Qussaannaq",
+                              "Imminnguaq"
+                              ],
+                  "imageUrl": "imminnguaq_skolaest.png",
+                  "publisher": "Skolæst",
+                  }
+				  {
+                  "id": "0148",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Imminnguaaraq",
+                  "answers": [
+                              "Imminnguaaraq",
+                              "Saarullik",
+                              "Isunngarsuaq",
+                              "Nipaalaq"
+                              ],
+                  "imageUrl": "imminnguaaraq_skolaest_murrays.png",
+                  "publisher": "Skolæst murrays",
+                  }
+				  {
+                  "id": "0149",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Iminnguaq avannarleq",
+                  "answers": [
+                              "Nimeriaq",
+                              "Tinguttooq",
+                              "Iminnguaq avannarleq",
+                              "Nipisarluk"
+                              ],
+                  "imageUrl": "iminnguaq_avannarleq_skolaest_nordlige.png",
+                  "publisher": "Skolæst nordlige",
+                  }
+				  {
+                  "id": "0150",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Isunnganga",
+                  "answers": [
+                              "Misaqqarnaq",
+                              "Isunnganga",
+                              "Nerlernaq",
+                              "Isunngarsuaq"
+                              ],
+                  "imageUrl": "isunnganga_sodfarvet_skraape.png",
+                  "publisher": "Sodfarvet Skråpe",
+                  }
+				  {
+                  "id": "0151",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Oquutarnaq",
+                  "answers": [
+                              "Allernaq",
+                              "Sikannertooq",
+                              "Qaleralik",
+                              "Oquutarnaq"
+                              ],
+                  "imageUrl": "oquutarnaq_skaerising.png",
+                  "publisher": "Skærising",
+                  }
+				  {
+                  "id": "0152",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kussattarnaq",
+                  "answers": [
+                              "Kussattarnaq",
+                              "Orpimmiutaq",
+                              "Sigguttooq",
+                              "Papikkaaq"
+                              ],
+                  "imageUrl": "kussattarnaq_hedepiber.png",
+                  "publisher": "Hedepiber",
+                  }
+				  {
+                  "id": "0153",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ivik",
+                  "answers": [
+                              "Qullugiaq",
+                              "Aamanganiaq",
+                              "Sikannertooq",
+                              "Ivik"
+                              ],
+                  "imageUrl": "ivik_slimaal.png",
+                  "publisher": "Slimål",
+                  }
+				  {
+                  "id": "0154",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kangoq",
+                  "answers": [
+                              "Kangoq",
+                              "Qeerlutoornaq",
+                              "Anorisiooq",
+                              "Nasalik"
+                              ],
+                  "imageUrl": "kangoq_snegaas.png",
+                  "publisher": "Snegås",
+                  }
+				  {
+                  "id": "0155",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ukaleq",
+                  "answers": [
+                              "Uppik",
+                              "Narlumukaaq",
+                              "Aamanganiaq",
+                              "Ukaleq"
+                              ],
+                  "imageUrl": "ukaleq_snehare.png",
+                  "publisher": "Snehare",
+                  }
+				  {
+                  "id": "0156",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qupaloraarsuk",
+                  "answers": [
+                              "Orpimmiutaq",
+                              "Qupaloraarsuk",
+                              "Oqalloriusaq",
+                              "Kussattarsuaq"
+                              ],
+                  "imageUrl": "qupaloraarsuk_snespurv.png",
+                  "publisher": "Snespurv",
+                  }
+				  {
+                  "id": "0157",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Uppik",
+                  "answers": [
+                              "Uugooq",
+                              "Unnaaleeraq",
+                              "Uppik",
+                              "Ukaliatsiaq"
+                              ],
+                  "imageUrl": "uppik_sneugle.png",
+                  "publisher": "Sneugle",
+                  }
+				  {
+                  "id": "0158",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niviugak miluuttooq",
+                  "answers": [
+                              "Ippernaq",
+                              "Niviugak timmiuaartoq",
+                              "Tuluigarnaq",
+                              "Niviugak miluuttooq"
+                              ],
+                  "imageUrl": "niviugak_miluuttoq_snylteflue.png",
+                  "publisher": "Snylteflue",
+                  }
+				  {
+                  "id": "0159",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Pakkaluaq uppingasoq",
+                  "answers": [
+                              "Pakkaluaq qillaalasortalik",
+                              "Pakkalugaq qasertoq",
+                              "Pakkaluaq uppingasoq",
+                              "Pakkaluaq takornartaq"
+                              ],
+                  "imageUrl": "pakkalugaq_uppingasoq_sortugle.png",
+                  "publisher": "Sortugle",
+                  }
+				  {
+                  "id": "0160",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qeerlutoornarnarnaq",
+                  "answers": [
+                              "Qeerlutoornaq",
+                              "Kajuaraq",
+                              "Qutsissormiutaq",
+                              "Qeerlutoornarnarnaq"
+                              ],
+                  "imageUrl": "qeerlutoornarnarnaq_spidsand.png",
+                  "publisher": "Spidsand",
+                  }
+				  {
+                  "id": "0161",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Pisseriaq",
+                  "answers": [
+                              "Pisseriaq",
+                              "Tuttup kumaa",
+                              "Minnguaraq",
+                              "Sikannertuusaq"
+                              ],
+                  "imageUrl": "pisseriaq_springhaler.png",
+                  "publisher": "Springhaler",
+                  }
+				  {
+                  "id": "0162",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niviugak",
+                  "answers": [
+                              "Issittup sikannertuuva",
+                              "Uumanikitsoq",
+                              "Niviugak",
+                              "Aamanganiaq"
+                              ],
+                  "imageUrl": "niviugak_spyflue.png",
+                  "publisher": "Spyflue",
+                  }
+				  {
+                  "id": "0163",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Aarluk",
+                  "answers": [
+                              "Arfivik",
+                              "Kigutilissuaq",
+                              "Aaveq",
+                              "Aarluk"
+                              ],
+                  "imageUrl": "aarluk_spaekhugger.png",
+                  "publisher": "Spækhugger",
+                  }
+				  {
+                  "id": "0164",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niutooq",
+                  "answers": [
+                              "Ippernaq",
+                              "Aasiak assagiargungasoq",
+                              "Niutooq",
+                              "Pisseriaq"
+                              ],
+                  "imageUrl": "niutooq_stankelben.png",
+                  "publisher": "Stankelben",
+                  }
+				  {
+                  "id": "0165",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nipisa",
+                  "answers": [
+                              "Nipisa",
+                              "Niisa",
+                              "Nipaalaq",
+                              "Nipisarluk"
+                              ],
+                  "imageUrl": "nipisa_stenbider.png",
+                  "publisher": "Stenbider",
+                  }
+				  {
+                  "id": "0166",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nipisarluk",
+                  "answers": [
+                              "Sikannertuusaq",
+                              "Nipisa",
+                              "Qaarsaaq",
+                              "Nipisarluk"
+                              ],
+                  "imageUrl": "nipisarluk_pigget_stenbider.png",
+                  "publisher": "Pigget stenbider",
+                  }
+				  {
+                  "id": "0167",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qussaq",
+                  "answers": [
+                              "Siorarsiooq",
+                              "Qussaq",
+                              "Kajuaraq",
+                              "Tinguttooq"
+                              ],
+                  "imageUrl": "qussaq_stenpikker.png",
+                  "publisher": "Stenpikker",
+                  }
+				  {
+                  "id": "0168",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Taliffak",
+                  "answers": [
+                              "Isunngarujussuaq",
+                              "Qussuk",
+                              "Taliffak",
+                              "Nujaki"
+                              ],
+                  "imageUrl": "taliffak_stenvender.png",
+                  "publisher": "Stenvender",
+                  }
+				  {
+                  "id": "0169",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ippernaq",
+                  "answers": [
+                              "Tuttup kumaa",
+                              "Ippernaq",
+                              "Niviugak timmiuaartoq",
+                              "Niviugak qatsissormiu"
+                              ],
+                  "imageUrl": "ippernaq_stikmyg.png",
+                  "publisher": "Stikmyg",
+                  }
+				  {
+                  "id": "0170",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Isunngarujussuaq",
+                  "answers": [
+                              "Naajarluk",
+                              "Siutaasalik",
+                              "Isunngarsuaq",
+                              "Isunngarujussuaq"
+                              ],
+                  "imageUrl": "isunngarujussuaq_storkjove.png",
+                  "publisher": "Storkjove",
+                  }
+				  {
+                  "id": "0171",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Anorisiooq",
+                  "answers": [
+                              "Anorisiooq",
+                              "Naajaannaq",
+                              "Kussannaq",
+                              "Naajarluusaq"
+                              ],
+                  "imageUrl": "anorisiooq_stormmaage.png",
+                  "publisher": "Stormmåge",
+                  }
+				  {
+                  "id": "0172",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tulugarnaasaq",
+                  "answers": [
+                              "Qiioqi",
+                              "Uppik",
+                              "Tulugarnaasaq",
+                              "Najorpaligaq"
+                              ],
+                  "imageUrl": "tulugarnaasaq_stormsvale.png",
+                  "publisher": "Stormsvale",
+                  }
+				  {
+                  "id": "0173",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qaqullunnaq",
+                  "answers": [
+                              "Qaqulluk",
+                              "Naajarluusaq",
+                              "Timmik",
+                              "Qaqullunnaq"
+                              ],
+                  "imageUrl": "qaqullunnaq_storskraape.png",
+                  "publisher": "Storskråpe",
+                  }
+				  {
+                  "id": "0174",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Anngilik sissarmiu",
+                  "answers": [
+                              "Kajuaraq",
+                              "Anngilik sissarmiu",
+                              "Tuluigarnaq",
+                              "Saarfaarsussuaq"
+                              ],
+                  "imageUrl": "anngilik_sissarmiu_strandhjejle.png",
+                  "publisher": "Strandhjejle",
+                  }
+				  {
+                  "id": "0175",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Toornaviarsuk",
+                  "answers": [
+                              "Toornaviarsuk",
+                              "Nerlernaarsuk",
+                              "Saarfaarsussuaq",
+                              "Anorisiooq"
+                              ],
+                  "imageUrl": "toornaviarsuk_stroemand.png",
+                  "publisher": "Strømand",
+                  }
+				  {
+                  "id": "0176",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niviugak niutooq",
+                  "answers": [
+                              "Ippernaq",
+                              "Niviortartoq",
+                              "Niviugak niutooq",
+                              "Eqqoqqortooq"
+                              ],
+                  "imageUrl": "niviugak_niutooq_stylteflue.png",
+                  "publisher": "Stylteflue",
+                  }
+				  {
+                  "id": "0176",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Oqalloriusaq",
+                  "answers": [
+                              "Oqalloriusaq",
+                              "Sigguttooq",
+                              "Kussannaq",
+                              "Alleq"
+                              ],
+                  "imageUrl": "oqalloriusaq_staer.png",
+                  "publisher": "Stær",
+                  }
+				  {
+                  "id": "0177",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Timmik",
+                  "answers": [
+                              "Sigguttooq",
+                              "Naajannguaq",
+                              "Timmik",
+                              "Qiioqi"
+                              ],
+                  "imageUrl": "timmik_sule.png",
+                  "publisher": "Sule",
+                  }
+				  {
+                  "id": "0178",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Naajarluk",
+                  "answers": [
+                              "Naajarluusaq",
+                              "Taateraarnaq",
+                              "Siorarsiooq",
+                              "Naajarluk"
+                              ],
+                  "imageUrl": "naajarluk_svartbag.png",
+                  "publisher": "Svartbag",
+                  }
+				  {
+                  "id": "0179",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Niviugak issulittartoq",
+                  "answers": [
+                              "Upernaap niviugaa",
+                              "Niviugak qatigalik",
+                              "Niviugak miluuttooq",
+                              "Niviugak issulittartoq"
+                              ],
+                  "imageUrl": "niviugak_issulittartoq_svirreflue.png",
+                  "publisher": "Svirreflue",
+                  }
+				  {
+                  "id": "0180",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tuttup kumaa",
+                  "answers": [
+                              "Tuttup kumaa",
+                              "Upernaap niviugaa",
+                              "Ukiup pakkalugaa",
+                              "Issittup igutssasua"
+                              ],
+                  "imageUrl": "tuttup_kumaa_svaelgbremse.png",
+                  "publisher": "Svælgbremse",
+                  }
+				  {
+                  "id": "0181",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qasigiaq",
+                  "answers": [
+                              "Ussuk",
+                              "Natseq",
+                              "Qasigiaq",
+                              "Natsersuaq"
+                              ],
+                  "imageUrl": "qasigiaq_spaettet_sael.png",
+                  "publisher": "Spættet sæl",
+                  }
+				  {
+                  "id": "0182",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Appaliarsuk",
+                  "answers": [
+                              "Appaliarsuk",
+                              "Serfaq",
+                              "Appa",
+                              "Tuullik"
+                              ],
+                  "imageUrl": "appaliarsuk_soekonge.png",
+                  "publisher": "Søkonge",
+                  }
+				  {
+                  "id": "0183",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qiioqi",
+                  "answers": [
+                              "Qiioqi",
+                              "Naajarluk",
+                              "Tulugaq",
+                              "Naajarujussuaq"
+                              ],
+                  "imageUrl": "qiioqi_soelvmaage.png",
+                  "publisher": "Sølvmåge",
+                  }
+				  {
+                  "id": "0184",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kinguk",
+                  "answers": [
+                              "Minngoq",
+                              "Nimeriaq",
+                              "Kinguk",
+                              "Nipaalaq"
+                              ],
+                  "imageUrl": "kinguk_tangloppe.png",
+                  "publisher": "Tangloppe",
+                  }
+				  {
+                  "id": "0185",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qussaannaq",
+                  "answers": [
+                              "Qaleralik",
+                              "Siutaasalik",
+                              "Qeeraaraq",
+                              "Qussaannaq"
+                              ],
+                  "imageUrl": "qussaannaq_tangsprael.png",
+                  "publisher": "Tangspræl",
+                  }
+				  {
+                  "id": "0186",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Qussaannaq pilaatalik",
+                  "answers": [
+                              "Qussaannaq pilaatalik",
+                              "Qeeraq",
+                              "Eqalugaasaq",
+                              "Naluumasortoq"
+                              ],
+                  "imageUrl": "qussaannaq_pilaatalik_baandet_tangsprael.png",
+                  "publisher": "Båndet tangspræl",
+                  }
+				  {
+                  "id": "0187",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Serfaq",
+                  "answers": [
+                              "Apparluk",
+                              "Serfaq",
+                              "Appaliarsuk",
+                              "Nujaki"
+                              ],
+                  "imageUrl": "serfaq_tejst.png",
+                  "publisher": "Tejst",
+                  }
+				  {
+                  "id": "0188",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kajuaraq",
+                  "answers": [
+                              "Kajuaraq",
+                              "Siorarsiooq",
+                              "Papikkaaq",
+                              "Nerlernaq"
+                              ],
+                  "imageUrl": "kajuaraq_thorshane.png",
+                  "publisher": "Thorshane",
+                  }
+				  {
+                  "id": "0189",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Putooruttoq avannarleq",
+                  "answers": [
+                              "Putooruttoq avannarleq",
+                              "Eqalugaasaq",
+                              "Eqalussuup nulia",
+                              "Nimeriarnaq oriaaq"
+                              ],
+                  "imageUrl": "putooruttoq_avannarleq_nordlige_Tobis.png",
+                  "publisher": "Norlige tobis",
+                  }
+				  {
+                  "id": "0190",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kanajoq kipinartulik",
+                  "answers": [
+                              "Imaviup kanajua",
+                              "Kanajoq kapinartulik",
+                              "Najorpaligaq",
+                              "Issittup kanajua"
+                              ],
+                  "imageUrl": "kanajoq_kapinartulik_tornulk.png",
+                  "publisher": "Tornulk",
+                  }
+				  {
+                  "id": "0191",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Saarullik",
+                  "answers": [
+                              "Saarullernaq",
+                              "Uvaq",
+                              "Saarullik",
+                              "Kanajoq"
+                              ],
+                  "imageUrl": "saarullik_torsk.png",
+                  "publisher": "Torsk",
+                  }
+				  {
+                  "id": "0192",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kanajoq",
+                  "answers": [
+                              "Kanajoq",
+                              "Issittup kanajua",
+                              "Sikannertooq",
+                              "Imaviup kanajua"
+                              ],
+                  "imageUrl": "kanajoq_ulk.png",
+                  "publisher": "Ulk",
+                  }
+				  {
+                  "id": "0193",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Minnguaraq",
+                  "answers": [
+                              "Minngoq",
+                              "Tarsialukaaq",
+                              "Minnguaraq",
+                              "Aamanganiaq"
+                              ],
+                  "imageUrl": "minnguaraq_vandkalv.png",
+                  "publisher": "Vandkalv",
+                  }
+				  {
+                  "id": "0194",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Minngoq",
+                  "answers": [
+                              "Kiinaaleeraq",
+                              "Minnguaraq",
+                              "Tarsialukaaq",
+                              "Minngoq"
+                              ],
+                  "imageUrl": "minngoq_stor_vandkalv.png",
+                  "publisher": "Stor vandkalv",
+                  }
+				  {
+                  "id": "0195",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kiinaaleeraq",
+                  "answers": [
+                              "Kiinaaleeraq",
+                              "Kissaviarsuk",
+                              "Kussattarnaq",
+                              "Allernaaraq"
+                              ],
+                  "imageUrl": "kiinaaleeraq_vandrefalk.png",
+                  "publisher": "Vandrefalk",
+                  }
+				  {
+                  "id": "0196",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Kussattarsuaq",
+                  "answers": [
+                              "Kussattarnaq",
+                              "Sigguttooq",
+                              "Kussattarsuaq",
+                              "Imeqqutaalaq"
+                              ],
+                  "imageUrl": "kussattarsuaq_vindrossel.png",
+                  "publisher": "Vindrossel",
+                  }
+				  {
+                  "id": "0197",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Ukiup pakkalugaa",
+                  "answers": [
+                              "Pakkaluaq",
+                              "Pakkaluaq qillaalasortalik",
+                              "Ukiup pakkalugaa",
+                              "Misaqqarnaq"
+                              ],
+                  "imageUrl": "ukiup_pakkalugaa_vintermaaler.png",
+                  "publisher": "Vintermåler",
+                  }
+				  {
+                  "id": "0198",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Tikaagullik",
+                  "answers": [
+                              "Aarluk",
+                              "Arfivik",
+                              "Tikaagulliusaaq",
+                              "Tikaagullik"
+                              ],
+                  "imageUrl": "tikaagullik_vaagehval.png",
+                  "publisher": "Vågehval",
+                  }
+				  {
+                  "id": "0199",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Upernaap niviugaa",
+                  "answers": [
+                              "Pakkaluaq qillaalasortalik",
+                              "Upernaap niviugaa",
+                              "Qullugiaq",
+                              "Aamanganiaq"
+                              ],
+                  "imageUrl": "upernaap_niviugaa_vaarflue.png",
+                  "publisher": "Vårflue",
+                  }
+				  {
+                  "id": "0200",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Issittup sikannertuua",
+                  "answers": [
+                              "Minnguaraq",
+                              "Tuttup kumaa",
+                              "Sikannertooq",
+                              "Issittup sikannertuua"
+                              ],
+                  "imageUrl": "issittup_sikannertuua_arktisk_oeresnudebille.png",
+                  "publisher": "Arktisk øresnudebille",
+                  }
+				  {
+                  "id": "0201",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nimeriaq",
+                  "answers": [
+                              "Nimeriaq",
+                              "Nimeriarnaq",
+                              "Ivik",
+                              "Siutaasalik"
+                              ],
+                  "imageUrl": "nimeriaq_aal.png",
+                  "publisher": "Ål",
+                  }
+				  {
+                  "id": "0202",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nimeriaq oriaaq",
+                  "answers": [
+                              "Nimeriaq",
+                              "Ivik",
+                              "Nimeriaq oriaaq",
+                              "Nimeriaq naakkaaq"
+                              ],
+                  "imageUrl": "nimeriarnaq_oriaaq_dobbeltliniet_aalebrosme.png",
+                  "publisher": "Dobbeltliniet ålebrosme",
+                  }
+				  {
+                  "id": "0203",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nimeriaq naakkaaq",
+                  "answers": [
+                              "Nimeriaq oriaaq",
+                              "Nimeriaq allalik",
+                              "Nimeriaq",
+                              "Nimeriaq naakkaaq"
+                              ],
+                  "imageUrl": "nimeriarnaq_naakkaaq_halvnoegen_aalebrosme.png",
+                  "publisher": "Halvnøgen ålebrosme",
+                  }
+				  {
+                  "id": "0204",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Nimeriaq allalik",
+                  "answers": [
+                              "Nimeriaq",
+                              "Nimeriaq allalik",
+                              "Nimeriaq naakkaaq",
+                              "Nimeriaq oriaaq"
+                              ],
+                  "imageUrl": "nimeriarnaq_allalik_netmoenstret_aalebrosme.png",
+                  "publisher": "Netmønstret ålebrosme",
+                  }
+				  {
+                  "id": "0205",
+                  "text": "Uumasoq Sunaava",
+				  "right": "Eqqoqqortooq",
+                  "answers": [
+                              "Sigguttooq",
+                              "Tulugaq",
+                              "Eqqoqqortooq",
+                              "Naajarluk"
+                              ],
+                  "imageUrl": "eqqoqqortooq_hvid_vipstjert.png",
+                  "publisher": "Hvid vipstjert",
+                  }
+				  
+                  ]
+}

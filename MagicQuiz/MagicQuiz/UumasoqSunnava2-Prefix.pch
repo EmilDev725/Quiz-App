@@ -1,0 +1,39 @@
+//
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef RELEASE
+#define NSLog                       //
+#endif
+
+#define UPDATE_INTERVAL 1.0f
+#define GLOBAL_UPDATE_INTERVAL 1.0f
+
+#define GC_ENABLED 1
+#define GAME_CENTER 1
+#define SHK_ENABLED 1
+
+#define PLAYHAVAN_TOKEN  @"62b77e73e70c4885be34b9e8d8203c48"
+#define PLAYHAVAN_SECRET @"0a1d5f854d6649f98681684e86e8956d"
+#define PLAYHAVAN_PLACE  @"game_launch"
+
+#define REVMOB_ID @"5394974114f50ab606b02435"
+
+
+#define GANTrackerID            @"UA-51739262-1"
+//#define ADMOB_BANNER_ID         @"a1539a683c451e0"
+
+#define ChartsBoostsAppID       @"539497a989b0bb3aab23b757"
+#define ChartBoostsAppSignature @"b3083222e41faa51543bf57a727ea0db32e3e7da"
+
+
