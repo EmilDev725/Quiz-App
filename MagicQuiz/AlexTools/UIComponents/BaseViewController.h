@@ -7,12 +7,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import <Chartboost/Chartboost.h>
 
 #ifdef ADMOB_BANNER_ID 
 
 #import <iAd/iAd.h>
 #import "GADBannerView.h"
-#import "Chartboost.h"
 
 #endif
 
@@ -20,7 +20,7 @@
 #import <StoreKit/StoreKit.h>
 
 
-@interface BaseViewController : UIViewController <MBProgressHUDDelegate
+@interface BaseViewController : UIViewController <ChartboostDelegate, MBProgressHUDDelegate
 
 #ifdef ADMOB_BANNER_ID 
 ,GADBannerViewDelegate

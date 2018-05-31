@@ -60,19 +60,20 @@ else
 
 - (id)deserializeAsDictionary:(NSData *)inData error:(NSError **)outError;
 {
-if (inData == NULL || [inData length] == 0)
+    if (inData == NULL || [inData length] == 0)
 	{
 	if (outError)
 		*outError = [NSError errorWithDomain:kJSONDeserializerErrorDomain code:-1 userInfo:NULL];
 
-	return(NULL);
+        return(NULL);
 	}
-CJSONScanner *theScanner = [CJSONScanner scannerWithData:inData];
-NSDictionary *theDictionary = NULL;
-if ([theScanner scanJSONDictionary:&theDictionary error:outError] == YES)
-	return(theDictionary);
-else
-	return(NULL);
+
+    CJSONScanner *theScanner = [CJSONScanner scannerWithData:inData];
+    NSDictionary *theDictionary = NULL;
+    if ([theScanner scanJSONDictionary:&theDictionary error:outError] == YES)
+        return(theDictionary);
+    else
+        return(NULL);
 }
 
 - (id)deserializeAsArray:(NSData *)inData error:(NSError **)outError;

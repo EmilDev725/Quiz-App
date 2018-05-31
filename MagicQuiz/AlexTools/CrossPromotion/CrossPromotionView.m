@@ -78,7 +78,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    int a = [[CrossPromotionManager sharedInstance] itemCount];
+    int a = (int)[[CrossPromotionManager sharedInstance] itemCount];
 	return a;
     
 }

@@ -366,7 +366,7 @@ static void releaseStatement(sqlite3_stmt* statement, sqlite3* database)
         _updateStatement, 
         1, 
         entry.uuid.UTF8String, 
-        entry.uuid.length, 
+        (int)entry.uuid.length,
         nil), _database);
         
     CHECK_SQLITE_SUCCESS(sqlite3_bind_double(
@@ -377,13 +377,13 @@ static void releaseStatement(sqlite3_stmt* statement, sqlite3* database)
     CHECK_SQLITE_SUCCESS(sqlite3_bind_int(
         _updateStatement, 
         3, 
-        entry.fileSize), _database);
+        (int)entry.fileSize), _database);
         
     CHECK_SQLITE_SUCCESS(sqlite3_bind_text(
         _updateStatement, 
         4, 
         entry.key.UTF8String, 
-        entry.key.length, 
+        (int)entry.key.length,
         nil), _database);
     
     CHECK_SQLITE_DONE(sqlite3_step(_updateStatement), _database);
@@ -414,14 +414,14 @@ static void releaseStatement(sqlite3_stmt* statement, sqlite3* database)
         _insertStatement, 
         1, 
         entry.uuid.UTF8String, 
-        entry.uuid.length, 
+        (int)entry.uuid.length,
         nil), _database);
 
     CHECK_SQLITE_SUCCESS(sqlite3_bind_text(
         _insertStatement, 
         2, 
         entry.key.UTF8String, 
-        entry.key.length, 
+        (int)entry.key.length,
         nil), _database);
         
     CHECK_SQLITE_SUCCESS(sqlite3_bind_double(
@@ -432,7 +432,7 @@ static void releaseStatement(sqlite3_stmt* statement, sqlite3* database)
     CHECK_SQLITE_SUCCESS(sqlite3_bind_int(
         _insertStatement, 
         4, 
-        entry.fileSize), _database);
+        (int)entry.fileSize), _database);
     
     CHECK_SQLITE_DONE(sqlite3_step(_insertStatement), _database);
 
@@ -448,7 +448,7 @@ static void releaseStatement(sqlite3_stmt* statement, sqlite3* database)
         _selectByKeyStatement, 
         1, 
         key.UTF8String, 
-        key.length,
+        (int)key.length,
         nil), _database);
   
     return [self _createCacheEntityInfo:_selectByKeyStatement];
@@ -476,7 +476,7 @@ static void releaseStatement(sqlite3_stmt* statement, sqlite3* database)
         selectStatement, 
         1, 
         wildcardKeyFragment.UTF8String, 
-        wildcardKeyFragment.length,
+        (int)wildcardKeyFragment.length,
         nil), _database);
 
     NSMutableArray *entries = [[[NSMutableArray alloc] init] autorelease];
@@ -557,7 +557,7 @@ static void releaseStatement(sqlite3_stmt* statement, sqlite3* database)
         _removeByKeyStatement, 
         1, 
         key.UTF8String, 
-        key.length, 
+        (int)key.length, 
         nil), _database);
 
     CHECK_SQLITE_DONE(sqlite3_step(_removeByKeyStatement), _database);

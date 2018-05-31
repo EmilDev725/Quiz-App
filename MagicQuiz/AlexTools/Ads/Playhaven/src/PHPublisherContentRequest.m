@@ -20,7 +20,7 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #import "PHPublisherContentRequest.h"
-#import "PHPublisherSubContentRequest.h"
+#import "PHPublisherSubcontentRequest.h"
 #import "PHContent.h"
 #import "PHConstants.h"
 #import "PHStringUtil.h"
@@ -240,6 +240,9 @@ PHPublisherContentDismissType * const PHPublisherNoContentTriggeredDismiss      
             Y = 0.0;
 
     switch (orientation) {
+        case UIInterfaceOrientationUnknown:
+            
+            break;
         case UIInterfaceOrientationPortrait:
             X = width - MAX_MARGIN;
             Y = MAX_MARGIN + barHeight;
@@ -263,6 +266,9 @@ PHPublisherContentDismissType * const PHPublisherNoContentTriggeredDismiss      
     if (!!topContentView) {
         CGRect contentFrame = [topContentView.content frameForOrientation:orientation];
         switch (orientation) {
+            case UIInterfaceOrientationUnknown:
+                
+                break;
             case UIInterfaceOrientationPortrait:
                 X = MIN(X, CGRectGetMaxX(contentFrame));
                 Y = MAX(Y, CGRectGetMinY(contentFrame) + barHeight);

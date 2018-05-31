@@ -481,7 +481,8 @@
 																										 timeoutInterval:60.0]; 
 	NSData *responseData = [NSURLConnection sendSynchronousRequest:requestM returningResponse:nil error:nil];
 	if(responseData){
-		NSDictionary *dict = [[JSONDecoder decoder] parseJSONData:responseData];
+//        NSDictionary *dict = [[JSONDecoder decoder] parseJSONData:responseData];
+        NSDictionary *dict = [[JSONDecoder decoder] objectWithData:responseData];
 		NSString *errorMsg = [[dict objectForKey:@"error"] objectForKey:@"error_msg"];
 		
 		if([errorMsg isEqualToString:@"Captcha needed"])
@@ -538,7 +539,8 @@
 	NSDictionary *dict;
 	if(responseData)
 	{
-		dict = [[JSONDecoder decoder] parseJSONData:responseData];
+//        dict = [[JSONDecoder decoder] parseJSONData:responseData];
+        dict = [[JSONDecoder decoder] objectWithData:responseData];
 #ifdef _SHKDebugShowLogs		
 		NSString *errorMsg = [[dict objectForKey:@"error"] objectForKey:@"error_msg"];
 #endif		

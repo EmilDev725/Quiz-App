@@ -346,7 +346,7 @@ tokenCachingStrategy:(FBSessionTokenCachingStrategy*)tokenCachingStrategy
 // we can use as part of a Facebook test user name (i.e., no digits).
 - (NSString*)validNameStringFromInteger:(NSUInteger)input 
 {
-    NSString *hashAsString = [NSString stringWithFormat:@"%u", input];
+    NSString *hashAsString = [NSString stringWithFormat:@"%lu", (unsigned long)input];
     NSMutableString *result = [NSMutableString stringWithString:@"Perm"];
     
     // We know each character is a digit. Convert it into a letter starting with 'a'.

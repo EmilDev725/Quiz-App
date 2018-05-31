@@ -39,7 +39,7 @@
         textlabel.text = @"aawdawd";
         textlabel.numberOfLines = 2;
         textlabel.font = self.titleLabel.font;
-        textlabel.textAlignment = UITextAlignmentCenter;
+        textlabel.textAlignment = NSTextAlignmentCenter;
         [textlabel retain];
         
         [self addSubview:textlabel];
@@ -73,7 +73,7 @@
         textlabel.textColor = [UIColor whiteColor];
         textlabel.text = @"aawdawd";
         textlabel.numberOfLines = 2;
-        textlabel.textAlignment = UITextAlignmentCenter;
+        textlabel.textAlignment = NSTextAlignmentCenter;
         textlabel.font = self.titleLabel.font;
         
         
@@ -102,9 +102,11 @@
     if(![VSUtils isIPad])
         constraintExtra = CGSizeMake(210, 20000.0f);
     
-    CGSize sizeQuestion = [textlabel.text sizeWithFont:textlabel.font constrainedToSize:constraintExtra lineBreakMode:UILineBreakModeWordWrap];
-   
-     
+    NSDictionary *attributes = @{NSFontAttributeName: textlabel.font};
+    CGSize sizeQuestion = [textlabel.text boundingRectWithSize: constraintExtra
+                                                options:NSStringDrawingUsesLineFragmentOrigin
+                                             attributes:attributes
+                                                context:nil].size;
     
     /*
     BOOL fix = NO;

@@ -105,7 +105,7 @@ BOOL SHKinit;
     UIViewController *result = [self getCurrentRootViewController];
     
     // Find the top most view controller being displayed (so we can add the modal view to it and not one that is hidden)
-	while (result.modalViewController != nil) result = result.modalViewController;
+	while (result.presentedViewController != nil) result = result.presentedViewController;
     
     NSAssert(result, @"ShareKit: There is no view controller to display from");
 	return result;  
@@ -197,7 +197,7 @@ BOOL SHKinit;
     if ([UIViewController instancesRespondToSelector:@selector(presentViewController:animated:completion:)]) {
         [topViewController presentViewController:vc animated:YES completion:nil];
     } else {
-        [topViewController presentModalViewController:vc animated:YES];
+        [topViewController presentViewController:vc animated:YES completion:nil];
     }
     
     self.currentView = vc;
@@ -233,7 +233,7 @@ BOOL SHKinit;
 		if ([currentView parentViewController] != nil)
 		{
 			self.isDismissingView = YES;
-			[[currentView parentViewController] dismissModalViewControllerAnimated:animated];
+			[[currentView parentViewController] dismissViewControllerAnimated:animated completion:nil];
 		}
 		// for iOS5
 		else if([currentView respondsToSelector:@selector(presentingViewController)] &&
@@ -819,7 +819,7 @@ NSString* SHKLocalizedString(NSString* key, ...)
     }
     else {
         // First try and remove the extended attribute if it is present
-        int result = getxattr(filePath, attrName, NULL, sizeof(u_int8_t), 0, 0);
+        int result = (int)getxattr(filePath, attrName, NULL, sizeof(u_int8_t), 0, 0);
         if (result != -1) {
             // The attribute exists, we need to remove it
             int removeResult = removexattr(filePath, attrName, 0);

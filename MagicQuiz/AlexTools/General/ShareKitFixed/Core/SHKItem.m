@@ -316,24 +316,24 @@
                                                     Tags:%@\n\
                                                     Custom fields:%@\n\n\
                                                     Sharer specific\n\n\
-                                                    Print output type: %i\n\
-													mailToRecipients: %@\n\
-                                                    isMailHTML: %i\n\
-                                                    mailJPGQuality: %f\n\
-                                                    mailShareWithAppSignature: %i\n\
-                                                    facebookURLSharePictureURI: %@\n\
-                                                    facebookURLShareDescription: %@\n\
-                                                    textMessageToRecipients: %@\n\
-                                                    popOverSourceRect: %@",
-						
-                                                    [self shareTypeToString:self.shareType],
-                                                    [self.URL absoluteString],
-                                                    self.URLContentType,
-                                                    [self.image description], 
-                                                    self.title, self.text, 
-                                                    self.tags, 
-                                                    [self.custom description],
-                                                    self.printOutputType,
+                        Print output type: %li\n\
+                        mailToRecipients: %@\n\
+                        isMailHTML: %i\n\
+                        mailJPGQuality: %f\n\
+                        mailShareWithAppSignature: %i\n\
+                        facebookURLSharePictureURI: %@\n\
+                        facebookURLShareDescription: %@\n\
+                        textMessageToRecipients: %@\n\
+                        popOverSourceRect: %@",
+                        
+                        [self shareTypeToString:self.shareType],
+                        [self.URL absoluteString],
+                        self.URLContentType,
+                        [self.image description],
+                        self.title, self.text,
+                        self.tags,
+                        [self.custom description],
+                        (long)self.printOutputType,
 													self.mailToRecipients,
                                                     self.isMailHTML,
                                                     self.mailJPGQuality,

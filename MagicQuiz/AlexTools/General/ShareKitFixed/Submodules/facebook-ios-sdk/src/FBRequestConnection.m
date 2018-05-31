@@ -611,7 +611,7 @@ typedef enum FBRequestConnectionState {
     [request setValue:[FBRequestConnection userAgent] forHTTPHeaderField:@"User-Agent"];
     [request setValue:[FBRequestBody mimeContentType] forHTTPHeaderField:@"Content-Type"];
     
-    [self logRequest:request bodyLength:bodyLength bodyLogger:bodyLogger attachmentLogger:attachmentLogger];
+    [self logRequest:request bodyLength: (int)bodyLength bodyLogger:bodyLogger attachmentLogger:attachmentLogger];
     
     // Safely release now that everything's serialized into the logger.
     [bodyLogger release];
@@ -762,9 +762,9 @@ typedef enum FBRequestConnectionState {
     for (id key in [metadata.request.parameters keyEnumerator]) {
         NSObject *value = [metadata.request.parameters objectForKey:key];
         if ([self isAttachment:value]) {
-            NSString *name = [NSString stringWithFormat:@"%@%d",
+            NSString *name = [NSString stringWithFormat:@"%@%lu",
                               kBatchFileNamePrefix,
-                              [attachments count]];
+                              (unsigned long)[attachments count]];
             if ([attachmentNames length]) {
                 [attachmentNames appendString:@","];
             }
@@ -868,7 +868,7 @@ typedef enum FBRequestConnectionState {
         // Arrays are serialized as multiple elements with keys of the
         // form key[0], key[1], etc.
         NSArray *array = (NSArray*)value;
-        int count = array.count;
+        int count = (int)array.count;
         for (int i = 0; i < count; ++i) {
             NSString *subKey = [NSString stringWithFormat:@"%@[%d]", key, i];
             id subValue = [array objectAtIndex:i];
@@ -917,7 +917,7 @@ typedef enum FBRequestConnectionState {
                  @"Expected NSHTTPURLResponse, got %@",
                  response);
         self.urlResponse = (NSHTTPURLResponse *)response;
-        statusCode = self.urlResponse.statusCode;
+        statusCode = (int)self.urlResponse.statusCode;
         
         if (!error && [response.MIMEType hasPrefix:@"image"]) {
             error = [self errorWithCode:FBErrorNonTextMimeTypeReturned
@@ -951,7 +951,7 @@ typedef enum FBRequestConnectionState {
     
     if (!error) {
         if ([self.requests count] != [results count]) {
-            NSLog(@"Expected %d results, got %d", [self.requests count], [results count]);
+            NSLog(@"Expected %lu results, got %lu", (unsigned long)[self.requests count], (unsigned long)[results count]);
             error = [self errorWithCode:FBErrorProtocolMismatch
                              statusCode:statusCode
                      parsedJSONResponse:results
@@ -1138,7 +1138,7 @@ typedef enum FBRequestConnectionState {
 - (void)completeWithResults:(NSArray *)results
                     orError:(NSError *)error
 {
-    int count = [self.requests count];
+    int count = (int)[self.requests count];
     for (int i = 0; i < count; i++) {
         FBRequestMetadata *metadata = [self.requests objectAtIndex:i];
         id result = error ? nil : [results objectAtIndex:i];
@@ -1190,7 +1190,7 @@ typedef enum FBRequestConnectionState {
                 if ([parsedResponse count]) {
                     newValue = [parsedResponse objectAtIndex:0];
                 }
-                itemError = [self errorWithCode:itemError.code
+                itemError = [self errorWithCode: (FBErrorCode)itemError.code
                                      statusCode:[[itemError.userInfo objectForKey:FBErrorHTTPStatusCodeKey] intValue]
                              parsedJSONResponse:newValue
                                      innerError:[itemError.userInfo objectForKey:FBErrorInnerErrorKey]
@@ -1415,10 +1415,10 @@ typedef enum FBRequestConnectionState {
 #pragma mark Debugging helpers
 
 - (NSString*)description {
-    NSMutableString *result = [NSMutableString stringWithFormat:@"<%@: %p, %d request(s): (\n",
-                               NSStringFromClass([self class]), 
+    NSMutableString *result = [NSMutableString stringWithFormat:@"<%@: %p, %lu request(s): (\n",
+                               NSStringFromClass([self class]),
                                self,
-                               self.requests.count];
+                               (unsigned long)self.requests.count];
     BOOL comma = NO;
     for (FBRequestMetadata *metadata in self.requests) {
         FBRequest *request = metadata.request;

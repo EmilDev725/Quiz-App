@@ -2193,7 +2193,7 @@ static int16_t EDAMEDAM_VERSION_MINOR = 22;
     if (__profiles != nil) {
       [outProtocol writeFieldBeginWithName: @"profiles" type: TType_LIST fieldID: 1];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__profiles count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__profiles count]];
         int i4;
         for (i4 = 0; i4 < [__profiles count]; i4++)
         {

@@ -215,17 +215,13 @@ extern CGFloat fontSizeRatio;
 -(void) showChartboostAds
 {
 #ifdef ChartsBoostsAppID
-    Chartboost *cb = [Chartboost sharedChartboost];
-    
-    cb.appId = ChartsBoostsAppID;
-    cb.appSignature = ChartBoostsAppSignature;
-    
-    // Begin a user session
-    [cb startSession];
+    [Chartboost startWithAppId:ChartsBoostsAppID
+                  appSignature:ChartBoostsAppSignature
+                      delegate:self];
     
     // Show an interstitial
     //[cb showInterstitial];
-    //[cb showInterstitial:<#(NSString *)#>]
+    //[cb showInterstitial:]
     //[cb showMoreApps];
     
 #endif

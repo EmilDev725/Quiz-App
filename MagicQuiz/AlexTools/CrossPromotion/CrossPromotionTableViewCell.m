@@ -4,7 +4,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "CrosspromotionTableViewCell.h"
+#import "CrossPromotionTableViewCell.h"
 #import "AlexStartApplication.h"
 #import "VSUtils.h"
 #import "CrossPromotionManager.h"

@@ -21,8 +21,11 @@
     self.font = [self.font fontWithSize:fontSize];
     
     CGSize tallerSize = CGSizeMake(self.frame.size.width-fudgeFactor,kMaxFieldHeight);
-    CGSize stringSize = [self.text sizeWithFont:self.font constrainedToSize:tallerSize lineBreakMode:UILineBreakModeWordWrap];
-    
+    NSDictionary *attributes = @{NSFontAttributeName: self.font};
+    CGSize stringSize = [self.text boundingRectWithSize:tallerSize
+                                                options:NSStringDrawingUsesLineFragmentOrigin
+                                             attributes:attributes
+                                                context:nil].size;
     while (stringSize.height >= self.frame.size.height) {
         
         if (fontSize <= aMinFontSize) // it just won't fit, ever
@@ -31,7 +34,10 @@
         fontSize -= 1.0;
         self.font = [self.font fontWithSize:fontSize];
         tallerSize = CGSizeMake(self.frame.size.width-fudgeFactor,kMaxFieldHeight);
-        stringSize = [self.text sizeWithFont:self.font constrainedToSize:tallerSize lineBreakMode:UILineBreakModeWordWrap];
+        stringSize = [self.text boundingRectWithSize:tallerSize
+                                                    options:NSStringDrawingUsesLineFragmentOrigin
+                                                 attributes:attributes
+                                                    context:nil].size;
     }
     
     return YES; 

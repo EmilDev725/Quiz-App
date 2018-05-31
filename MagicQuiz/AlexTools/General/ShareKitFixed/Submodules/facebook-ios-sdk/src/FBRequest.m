@@ -246,10 +246,10 @@ static NSString *const kPostHTTPMethod = @"POST";
 {
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
     [parameters setObject:@"place" forKey:@"type"];
-    [parameters setObject:[NSString stringWithFormat:@"%d", limit] forKey:@"limit"];
+    [parameters setObject:[NSString stringWithFormat:@"%ld", (long)limit] forKey:@"limit"];
     [parameters setObject:[NSString stringWithFormat:@"%lf,%lf", coordinate.latitude, coordinate.longitude]
                    forKey:@"center"];
-    [parameters setObject:[NSString stringWithFormat:@"%d", radius] forKey:@"distance"];
+    [parameters setObject:[NSString stringWithFormat:@"%ld", (long)radius] forKey:@"distance"];
     if ([searchText length]) {
         [parameters setObject:searchText forKey:@"q"];
     }

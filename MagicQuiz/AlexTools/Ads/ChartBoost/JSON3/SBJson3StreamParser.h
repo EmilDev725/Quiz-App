@@ -103,12 +103,12 @@ typedef enum {
 	id<SBJson3StreamParserDelegate> delegate;
 	SBJson3Tokeniser *tokeniser;
     NSMutableArray *stateStack;
-	__weak SBJson3StreamParserState *state;
+	SBJson3StreamParserState *state;
 	NSUInteger maxDepth;
 	NSString *error;
 }
 
-@property (nonatomic, assign) __weak SBJson3StreamParserState *state; // Private
+@property (nonatomic, assign) SBJson3StreamParserState *state; // Private
 @property (nonatomic, readonly, retain) NSMutableArray *stateStack; // Private
 
 /**

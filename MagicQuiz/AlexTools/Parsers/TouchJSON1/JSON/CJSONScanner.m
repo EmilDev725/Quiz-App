@@ -174,123 +174,123 @@ return(theResult);
 
 - (BOOL)scanJSONDictionary:(NSDictionary **)outDictionary error:(NSError **)outError
 {
-NSUInteger theScanLocation = [self scanLocation];
-
-if ([self scanCharacter:'{'] == NO)
-	{
-	if (outError)
-		{
-		NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-			@"Could not scan dictionary. Dictionary that does not start with '{' character.", NSLocalizedDescriptionKey,
-			NULL];
-		*outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-1 userInfo:theUserInfo];
-		}
-	return(NO);
-	}
-
-NSMutableDictionary *theDictionary = [[NSMutableDictionary alloc] init];
-
-while ([self currentCharacter] != '}')
-	{
-	[self skipWhitespace];
-	
-	if ([self currentCharacter] == '}')
-		break;
-
-	NSString *theKey = NULL;
-	if ([self scanJSONStringConstant:&theKey error:outError] == NO)
-		{
-		[self setScanLocation:theScanLocation];
-		if (outError)
-			{
-			NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-				@"Could not scan dictionary. Failed to scan a key.", NSLocalizedDescriptionKey,
-				NULL];
-			*outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-2 userInfo:theUserInfo];
-			}
-		[theDictionary release];
-		return(NO);
-		}
-
-	[self skipWhitespace];
-
-	if ([self scanCharacter:':'] == NO)
-		{
-		[self setScanLocation:theScanLocation];
-		if (outError)
-			{
-			NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-				@"Could not scan dictionary. Key was not terminated with a ':' character.", NSLocalizedDescriptionKey,
-				NULL];
-			*outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-3 userInfo:theUserInfo];
-			}
-		[theDictionary release];
-		return(NO);
-		}
-
-	id theValue = NULL;
-	if ([self scanJSONObject:&theValue error:outError] == NO)
-		{
-		[self setScanLocation:theScanLocation];
-		if (outError)
-			{
-			NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-				@"Could not scan dictionary. Failed to scan a value.", NSLocalizedDescriptionKey,
-				NULL];
-			*outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-4 userInfo:theUserInfo];
-			}
-		[theDictionary release];
-		return(NO);
-		}
-
-	[theDictionary setValue:theValue forKey:theKey];
-
-	[self skipWhitespace];
-	if ([self scanCharacter:','] == NO)
-		{
-		if ([self currentCharacter] != '}')
-			{
-			[self setScanLocation:theScanLocation];
-			if (outError)
-				{
-				NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-					@"Could not scan dictionary. Key value pairs not delimited with a ',' character.", NSLocalizedDescriptionKey,
-					NULL];
-				*outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-5 userInfo:theUserInfo];
-				}
-			[theDictionary release];
-			return(NO);
-			}
-		break;
-		}
-	else
-		{
-		[self skipWhitespace];
-		if ([self currentCharacter] == '}')
-			break;
-		}
-	}
-
-if ([self scanCharacter:'}'] == NO)
-	{
-	[self setScanLocation:theScanLocation];
-	if (outError)
-		{
-		NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-			@"Could not scan dictionary. Dictionary not terminated by a '}' character.", NSLocalizedDescriptionKey,
-			NULL];
-		*outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-6 userInfo:theUserInfo];
-		}
-	[theDictionary release];
-	return(NO);
-	}
-
-if (outDictionary != NULL)
-	*outDictionary = [[theDictionary copy] autorelease];
-
-[theDictionary release];
-
-return(YES);
+    NSUInteger theScanLocation = [self scanLocation];
+    
+    if ([self scanCharacter:'{'] == NO)
+    {
+        if (outError)
+        {
+            NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+                                         @"Could not scan dictionary. Dictionary that does not start with '{' character.", NSLocalizedDescriptionKey,
+                                         NULL];
+            *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-1 userInfo:theUserInfo];
+        }
+        return(NO);
+    }
+    
+    NSMutableDictionary *theDictionary = [[NSMutableDictionary alloc] init];
+    
+    while ([self currentCharacter] != '}')
+    {
+        [self skipWhitespace];
+        
+        if ([self currentCharacter] == '}')
+            break;
+        
+        NSString *theKey = NULL;
+        if ([self scanJSONStringConstant:&theKey error:outError] == NO)
+        {
+            [self setScanLocation:theScanLocation];
+            if (outError)
+            {
+                NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+                                             @"Could not scan dictionary. Failed to scan a key.", NSLocalizedDescriptionKey,
+                                             NULL];
+                *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-2 userInfo:theUserInfo];
+            }
+            [theDictionary release];
+            return(NO);
+        }
+        
+        [self skipWhitespace];
+        
+        if ([self scanCharacter:':'] == NO)
+        {
+            [self setScanLocation:theScanLocation];
+            if (outError)
+            {
+                NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+                                             @"Could not scan dictionary. Key was not terminated with a ':' character.", NSLocalizedDescriptionKey,
+                                             NULL];
+                *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-3 userInfo:theUserInfo];
+            }
+            [theDictionary release];
+            return(NO);
+        }
+        
+        id theValue = NULL;
+        if ([self scanJSONObject:&theValue error:outError] == NO)
+        {
+            [self setScanLocation:theScanLocation];
+            if (outError)
+            {
+                NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+                                             @"Could not scan dictionary. Failed to scan a value.", NSLocalizedDescriptionKey,
+                                             NULL];
+                *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-4 userInfo:theUserInfo];
+            }
+            [theDictionary release];
+            return(NO);
+        }
+        
+        [theDictionary setValue:theValue forKey:theKey];
+        
+        [self skipWhitespace];
+        if ([self scanCharacter:','] == NO)
+        {
+            if ([self currentCharacter] != '}')
+            {
+                [self setScanLocation:theScanLocation];
+                if (outError)
+                {
+                    NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                 @"Could not scan dictionary. Key value pairs not delimited with a ',' character.", NSLocalizedDescriptionKey,
+                                                 NULL];
+                    *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-5 userInfo:theUserInfo];
+                }
+                [theDictionary release];
+                return(NO);
+            }
+            break;
+        }
+        else
+        {
+            [self skipWhitespace];
+            if ([self currentCharacter] == '}')
+                break;
+        }
+    }
+    
+    if ([self scanCharacter:'}'] == NO)
+    {
+        [self setScanLocation:theScanLocation];
+        if (outError)
+        {
+            NSDictionary *theUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+                                         @"Could not scan dictionary. Dictionary not terminated by a '}' character.", NSLocalizedDescriptionKey,
+                                         NULL];
+            *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:-6 userInfo:theUserInfo];
+        }
+        [theDictionary release];
+        return(NO);
+    }
+    
+    if (outDictionary != NULL)
+        *outDictionary = [[theDictionary copy] autorelease];
+    
+    [theDictionary release];
+    
+    return(YES);
 }
 
 - (BOOL)scanJSONArray:(NSArray **)outArray error:(NSError **)outError

@@ -331,8 +331,8 @@
 
 - (BOOL)handleOpenURL:(NSURL *)url
 {
-    [self.viewController dismissModalViewControllerAnimated:YES];
-
+    [self.viewController dismissViewControllerAnimated:YES completion:nil];
+    
     // only handle our specific oauth_callback URLs
     if (![[url absoluteString] hasPrefix:[self oauthCallback]]) {
         return NO;
@@ -392,7 +392,7 @@
     // Usually this shows up as a 401 response with an error page, so
     // log it and callback an error.
     if ([self.response respondsToSelector:@selector(statusCode)]) {
-        int statusCode = [(id)self.response statusCode];
+        int statusCode = (int)[(id)self.response statusCode];
         if (statusCode != 200) {
             NSLog(@"Received error HTTP response code: %d", statusCode);
             NSLog(@"%@", string);
@@ -462,7 +462,7 @@
         oauthNavController.modalPresentationStyle = UIModalPresentationFormSheet;
     }
     
-    [self.viewController presentModalViewController:oauthNavController animated:YES];
+    [self.viewController presentViewController:oauthNavController animated:YES completion:nil];
 }
 
 - (void)saveCredentialsWithEdamUserId:(NSString *)edamUserId 
@@ -520,19 +520,19 @@
 
 - (void)oauthViewControllerDidCancel:(ENOAuthViewController *)sender
 {
-    [self.viewController dismissModalViewControllerAnimated:YES];    
+    [self.viewController dismissViewControllerAnimated:YES completion:nil];
 	[self completeAuthenticationWithError:nil];
 }
 
 - (void)oauthViewController:(ENOAuthViewController *)sender didFailWithError:(NSError *)error
 {
-    [self.viewController dismissModalViewControllerAnimated:YES];
+    [self.viewController dismissViewControllerAnimated:YES completion:nil];
     [self completeAuthenticationWithError:error];
 }
 
 - (void)oauthViewController:(ENOAuthViewController *)sender receivedOAuthCallbackURL:(NSURL *)url
 {
-    [self.viewController dismissModalViewControllerAnimated:YES];
+    [self.viewController dismissViewControllerAnimated:YES completion:nil];
     
     // OAuth step 3: got authorization from the user, now get a real token.
     NSDictionary *parameters = [EvernoteSession parametersFromQueryString:url.query];

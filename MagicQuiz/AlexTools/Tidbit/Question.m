@@ -73,8 +73,8 @@
 	[encoder encodeObject:[NSNumber numberWithInt:answeredCorrectly] forKey:@"answeredCorrectly"];
 	[encoder encodeObject:priority forKey:@"priority"];
     
-    [encoder encodeObject:[NSNumber numberWithInt:pack] forKey:@"pack"];
-    [encoder encodeObject:[NSNumber numberWithInt:type] forKey:@"type"];
+    [encoder encodeObject:[NSNumber numberWithInt: (int)pack] forKey:@"pack"];
+    [encoder encodeObject:[NSNumber numberWithInt: (int)type] forKey:@"type"];
     
     
     // NTG
@@ -84,8 +84,8 @@
     
     // Video
     
-    [encoder encodeObject:[NSNumber numberWithInt:startVideoPlayTime] forKey:@"startVideoPlayTime"];
-	[encoder encodeObject:[NSNumber numberWithInt:endVideoPlayTime] forKey:@"endVideoPlayTime"];
+    [encoder encodeObject:[NSNumber numberWithInt: (int)startVideoPlayTime] forKey:@"startVideoPlayTime"];
+	[encoder encodeObject:[NSNumber numberWithInt: (int)endVideoPlayTime] forKey:@"endVideoPlayTime"];
     [encoder encodeObject:videoUrl forKey:@"videoUrl"];
 }
 
@@ -132,7 +132,7 @@
     question.identifier = [questionJSON objectForKey:@"id"];
     
     NSInteger iVal = [question.identifier intValue];
-    question.identifierNum = [NSNumber numberWithInt:iVal];
+    question.identifierNum = [NSNumber numberWithInteger: iVal];
     
     question.rightAnswer= [questionJSON objectForKey:@"right"]; 
     question.indexName= [questionJSON objectForKey:@"indexname"]; 

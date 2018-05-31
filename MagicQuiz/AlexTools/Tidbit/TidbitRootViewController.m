@@ -25,17 +25,9 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-- (void)achievementViewControllerDidFinish:(GKAchievementViewController *)viewController
-{
-   
+- (void) gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController {
     [[TidbitGame sharedInstance] playSound:MCsoundButtonClick];
-	[self dismissModalViewControllerAnimated:YES];
-}
-
-- (void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
-{
-    [[TidbitGame sharedInstance] playSound:MCsoundButtonClick];
-	[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void) enableGUIForGC:(BOOL) enable
@@ -45,13 +37,8 @@
 }
 
 - (void)viewDidLoad {
-    
-   
-    
     [super viewDidLoad];
 
-	
-	
     if(![self isGameCenterSuport])
     {
         [self enableGUIForGC:NO];
@@ -190,21 +177,38 @@
     switch (gcLoadPlace) {
         case GC_SCORES:
         {
-            GKLeaderboardViewController *leaderboardController = [[GKLeaderboardViewController alloc] init];
-            if (leaderboardController != nil)
-            {
-                leaderboardController.leaderboardDelegate = self;
-                [self presentModalViewController: leaderboardController animated: YES];
+//            GKLeaderboardViewController *leaderboardController = [[GKLeaderboardViewController alloc] init];
+//            if (leaderboardController != nil)
+//            {
+//                leaderboardController.leaderboardDelegate = self;
+//                [self presentViewController: leaderboardController animated:YES completion:nil];
+//            }
+            
+            GKGameCenterViewController *leaderboardController = [[GKGameCenterViewController alloc] init];
+            if (leaderboardController != NULL) {
+                leaderboardController.gameCenterDelegate = self;
+                leaderboardController.viewState = GKGameCenterViewControllerStateLeaderboards;
+//                leaderboardController.leaderboardIdentifier = @""
+                [self presentViewController:leaderboardController animated:YES completion:nil];
             }
             break;
         }
         case GC_ACHIEVMENTS:
         {
-            GKAchievementViewController *achievements = [[GKAchievementViewController alloc] init];
-            if (achievements != NULL)
-            {
-                achievements.achievementDelegate = self;
-                [self presentModalViewController: achievements animated: YES];
+            GKGameCenterViewController *achivements = [[GKGameCenterViewController alloc] init];
+            if (achivements != NULL) {
+                achivements.gameCenterDelegate = self;
+                achivements.viewState = GKGameCenterViewControllerStateAchievements;
+                //                leaderboardController.leaderboardIdentifier = @""
+                [self presentViewController:achivements animated:YES completion:nil];
+            }
+            
+            GKGameCenterViewController *leaderboardController = [[GKGameCenterViewController alloc] init];
+            if (leaderboardController != NULL) {
+                leaderboardController.gameCenterDelegate = self;
+                leaderboardController.viewState = GKGameCenterViewControllerStateLeaderboards;
+                //                leaderboardController.leaderboardIdentifier = @""
+                [self presentViewController:leaderboardController animated:YES completion:nil];
             }
             break;
         }
@@ -225,11 +229,12 @@
     
         if([[TidbitGame sharedInstance] isUserLogin])
         {
-            GKLeaderboardViewController *leaderboardController = [[GKLeaderboardViewController alloc] init];
-            if (leaderboardController != nil)
-            {
-                leaderboardController.leaderboardDelegate = self;
-                [self presentModalViewController: leaderboardController animated: YES];
+            GKGameCenterViewController *leaderboardController = [[GKGameCenterViewController alloc] init];
+            if (leaderboardController != NULL) {
+                leaderboardController.gameCenterDelegate = self;
+                leaderboardController.viewState = GKGameCenterViewControllerStateLeaderboards;
+                //                leaderboardController.leaderboardIdentifier = @""
+                [self presentViewController:leaderboardController animated:YES completion:nil];
             }
         }
         else
@@ -258,11 +263,12 @@
         
         if([[TidbitGame sharedInstance] isUserLogin])
         {
-            GKAchievementViewController *achievements = [[GKAchievementViewController alloc] init];
-            if (achievements != NULL)
-            {
-                achievements.achievementDelegate = self;
-                [self presentModalViewController: achievements animated: YES];
+            GKGameCenterViewController *achivements = [[GKGameCenterViewController alloc] init];
+            if (achivements != NULL) {
+                achivements.gameCenterDelegate = self;
+                achivements.viewState = GKGameCenterViewControllerStateAchievements;
+                //                leaderboardController.leaderboardIdentifier = @""
+                [self presentViewController:achivements animated:YES completion:nil];
             }
         }
         else

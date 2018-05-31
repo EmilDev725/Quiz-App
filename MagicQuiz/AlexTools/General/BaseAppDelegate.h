@@ -9,12 +9,12 @@
 #import <AVFoundation/AVFoundation.h>
 //#import "iRate.h"
 #include "Appirater.h"
+#import <objc/runtime.h>
+#import <UserNotifications/UserNotifications.h>
 
+#define SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
-
-
-
-@interface BaseAppDelegate : NSObject <AppiraterDelegate> 
+@interface BaseAppDelegate : NSObject <AppiraterDelegate, UNUserNotificationCenterDelegate> 
 {
     UINavigationController *navigationController;
 }

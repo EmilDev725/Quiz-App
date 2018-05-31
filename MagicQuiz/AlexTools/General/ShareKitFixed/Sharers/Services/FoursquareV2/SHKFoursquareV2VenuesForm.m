@@ -384,6 +384,7 @@
     return NO;
 }
 
+
 #pragma mark -
 #pragma mark UISearchBarDelegate
 

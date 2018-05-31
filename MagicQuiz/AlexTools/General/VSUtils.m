@@ -126,7 +126,7 @@
 
 +(NSString*) formatScores:(NSInteger) scores useComma:(BOOL) useComma
 {
-	NSString *s_scores = [NSString stringWithFormat:@"%i",scores];
+    NSString *s_scores = [NSString stringWithFormat:@"%li",(long)scores];
 	
 	if ([s_scores length] > 3) {
 		
@@ -150,7 +150,7 @@
 
 +(NSString*) formatScores:(NSInteger) scores
 {
-	NSString *s_scores = [NSString stringWithFormat:@"%i",scores];
+    NSString *s_scores = [NSString stringWithFormat:@"%li",(long)scores];
 	
 	if ([s_scores length] > 3) {
 		
@@ -170,11 +170,11 @@
 
 
 + (BOOL) isIPad {
-#ifdef UI_USER_INTERFACE_IDIOM
-    return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
-#else
-    return NO;
-#endif
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return YES;
+    }else {
+        return NO;
+    }
 }
 
 
@@ -421,7 +421,7 @@
 	double oldSec = [old timeIntervalSince1970];
 	
 	NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
-	int timeZoneOffset = [destinationTimeZone secondsFromGMTForDate:now] / 3600;
+	int timeZoneOffset = (int)([destinationTimeZone secondsFromGMTForDate:now] / 3600);
 	
 	
 	NSInteger passed = nowSec - (oldSec + 3600*timeZoneOffset);
@@ -480,7 +480,7 @@
 	
 	
 	
-	return [NSString stringWithFormat:@" %i %@ ago",passed,type];
+    return [NSString stringWithFormat:@" %li %@ ago",(long)passed,type];
 }
 
 +(double) getSystemVersion

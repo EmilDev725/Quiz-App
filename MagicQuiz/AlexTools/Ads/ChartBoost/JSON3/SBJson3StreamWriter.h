@@ -86,13 +86,13 @@
 @private
 	NSString *error;
     NSMutableArray *stateStack;
-    __weak SBJson3StreamWriterState *state;
+    SBJson3StreamWriterState *state;
     id<SBJson3StreamWriterDelegate> delegate;
 	NSUInteger maxDepth;
     BOOL sortKeys, humanReadable;
 }
 
-@property (nonatomic, assign) __weak SBJson3StreamWriterState *state; // Internal
+@property (nonatomic, assign) SBJson3StreamWriterState *state; // Internal
 @property (nonatomic, readonly, retain) NSMutableArray *stateStack; // Internal 
 
 /**

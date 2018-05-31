@@ -72,7 +72,7 @@ static NSDateFormatter* CreateDateFormatter(NSString *format)
 {
     const char *str = [url.absoluteString UTF8String];
     unsigned char r[CC_MD5_DIGEST_LENGTH];
-    CC_MD5(str, strlen(str), r);
+    CC_MD5(str, (unsigned int)strlen(str), r);
     return [NSString stringWithFormat:@"%@_%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
             kSDURLCacheVersion, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10], r[11], r[12], r[13], r[14], r[15]];
 }
@@ -280,7 +280,8 @@ static NSDateFormatter* CreateDateFormatter(NSString *format)
     [self createDiskCachePath];
     @synchronized(self.diskCacheInfo)
     {
-        NSData *data = [NSPropertyListSerialization dataFromPropertyList:self.diskCacheInfo format:NSPropertyListBinaryFormat_v1_0 errorDescription:NULL];
+//        NSData *data = [NSPropertyListSerialization dataFromPropertyList:self.diskCacheInfo format:NSPropertyListBinaryFormat_v1_0 errorDescription:NULL];
+        NSData *data = [NSPropertyListSerialization dataWithPropertyList:self.diskCacheInfo format:NSPropertyListBinaryFormat_v1_0 options:NULL error:NULL];
         if (data)
         {
             [data writeToFile:[diskCachePath stringByAppendingPathComponent:kSDURLCacheInfoFileName] atomically:YES];

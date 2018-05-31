@@ -69,7 +69,7 @@ static PHStoreProductViewControllerDelegate *_delegate = nil;
         controller.delegate = self;
         [controller loadProductWithParameters:parameters completionBlock:nil];
 
-        [[self visibleViewController] presentModalViewController:controller animated:YES];
+        [[self visibleViewController] presentViewController: controller animated: YES completion: nil];
         [controller release];
         return true;
     }
@@ -89,8 +89,9 @@ static PHStoreProductViewControllerDelegate *_delegate = nil;
 - (void)appDidEnterBackground
 {
     // This will automatically dismiss the view controller when the app is backgrounded
-    if (_visibleViewController.modalViewController)
-        [_visibleViewController dismissModalViewControllerAnimated:NO];
+    if (_visibleViewController.presentedViewController)
+        [_visibleViewController dismissViewControllerAnimated:NO completion:nil];
+    
     [_visibleViewController.view removeFromSuperview];
 }
 @end

@@ -627,8 +627,8 @@ static FBSession *g_activeSession = nil;
                 //we don't actually need to inspect renewResult or error.
                 if (error){
                     [FBLogger singleShotLogEntry:FBLoggingBehaviorAccessTokens
-                                        logEntry:[NSString stringWithFormat:@"renewCredentialsForAccount result:%d, error: %@",
-                                                  renewResult,
+                                        logEntry:[NSString stringWithFormat:@"renewCredentialsForAccount result:%ld, error: %@",
+                                                  (long)renewResult,
                                                   error]];
                 }
             }];

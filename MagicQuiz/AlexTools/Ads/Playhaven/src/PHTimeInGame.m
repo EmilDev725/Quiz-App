@@ -60,7 +60,7 @@ static PHTimeInGame * shared = nil;
                                                  name:UIApplicationDidEnterBackgroundNotification
                                                object:nil];
 
-    int currentSessionCount = [[NSUserDefaults standardUserDefaults] integerForKey:@"PHSessionCount"] + 1;
+    int currentSessionCount = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"PHSessionCount"] + 1;
     [[NSUserDefaults standardUserDefaults] setInteger:currentSessionCount forKey:@"PHSessionCount"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -108,7 +108,7 @@ static PHTimeInGame * shared = nil;
 - (int)getCountSessions
 {
     NSInteger result = [[NSUserDefaults standardUserDefaults] integerForKey:@"PHSessionCount"];
-    return result;
+    return (int)result;
 }
 
 /*

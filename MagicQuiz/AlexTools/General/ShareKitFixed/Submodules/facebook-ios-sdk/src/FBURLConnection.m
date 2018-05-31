@@ -134,16 +134,16 @@ static NSArray* _cdnHosts;
     if (error) {
         
         logEntry = [NSString 
-                    stringWithFormat:@"FBURLConnection <#%d>:\n  Error: '%@'",
-                    _loggerSerialNumber,
+                    stringWithFormat:@"FBURLConnection <#%lu>:\n  Error: '%@'",
+                    (unsigned long)_loggerSerialNumber,
                     [error localizedDescription]];
         
     } else {            
         
         // Basic FBURLConnection logging just prints out the URL.  FBRequest logging provides more details.                        
         NSString *mimeType = [response MIMEType];
-        NSMutableString *mutableLogEntry = [NSMutableString stringWithFormat:@"FBURLConnection <#%d>:\n  Duration: %lu msec\nResponse Size: %d kB\n  MIME type: %@\n", 
-                                            _loggerSerialNumber,
+        NSMutableString *mutableLogEntry = [NSMutableString stringWithFormat:@"FBURLConnection <#%lu>:\n  Duration: %lu msec\nResponse Size:%lud kB\n  MIME type: %@\n", 
+                                            (unsigned long)_loggerSerialNumber,
                                             [FBUtility currentTimeInMilliseconds] - _requestStartTime,
                                             [responseData length] / 1024,
                                             mimeType];

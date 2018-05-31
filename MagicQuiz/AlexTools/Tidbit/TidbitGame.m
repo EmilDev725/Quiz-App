@@ -357,11 +357,11 @@ static TidbitGame *sharedInstance = nil;
 		
 		NSMutableArray *answersArray = currentQuestion.asnwers;
 		
-		srandom(time(NULL));
+		srandom((int)time(NULL));
 		NSUInteger count = [answersArray count];
 		for (NSUInteger i = 0; i < count; ++i) {
-			int nElements = count - i;
-			int n = (arc4random() % nElements) + i;
+			int nElements = (int)(count - i);
+			int n = (int)((arc4random() % nElements) + i);
 			[answersArray exchangeObjectAtIndex:i withObjectAtIndex:n];
 		}
 		
@@ -417,11 +417,11 @@ static TidbitGame *sharedInstance = nil;
 
 -(void) mixQuestions
 {
-    srandom(time(NULL));
+    srandom((int)time(NULL));
     NSUInteger count = [questionArray count];
     for (NSUInteger i = 0; i < count; ++i) {
-        int nElements = count - i;
-        int n = (random() % nElements) + i;
+        int nElements = (int)(count - i);
+        int n = (int)((random() % nElements) + i);
         [questionArray exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
 }
@@ -441,11 +441,11 @@ static TidbitGame *sharedInstance = nil;
     
     gameCompleted = NO;
     
-    srandom(time(NULL));
+    srandom((int)time(NULL));
     NSUInteger count = [questionArray count];
     for (NSUInteger i = 0; i < count; ++i) {
-        int nElements = count - i;
-        int n = (random() % nElements) + i;
+        int nElements = (int)(count - i);
+        int n = (int)((random() % nElements) + i);
         [questionArray exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
     
@@ -475,7 +475,7 @@ static TidbitGame *sharedInstance = nil;
 
 -(void) saveUserProperties
 {
-	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:cumulativeCorrectAnswersCount] forKey:@"cumulativeCorrectAnswersCount"];
+	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:(int)cumulativeCorrectAnswersCount] forKey:@"cumulativeCorrectAnswersCount"];
     
     [[NSUserDefaults standardUserDefaults] setBool:soundEnable forKey:@"soundEnable"];
     [[NSUserDefaults standardUserDefaults] setBool:packWasBought forKey:@"packWasBought"];
@@ -623,7 +623,7 @@ static TidbitGame *sharedInstance = nil;
 	NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
 	[data setObject:[NSKeyedArchiver archivedDataWithRootObject:questionArray] forKey:@"questions"];
 	[[NSUserDefaults standardUserDefaults] setObject:data forKey:@"data"];
-	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:gameNum] forKey:@"gameNum"];
+	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:(int)gameNum] forKey:@"gameNum"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
     [data release];
 }

@@ -47,13 +47,19 @@
         
         // calculate drawWidth based on textAlignment
         int drawWidth = 0;
-        if (self.textAlignment == UITextAlignmentCenter) {
-            drawWidth = floorf((self.frame.size.width - [line sizeWithFont:self.font].width) / 2);
-        } else if (self.textAlignment == UITextAlignmentRight) {
-            drawWidth = (self.frame.size.width - [line sizeWithFont:self.font].width);
+        NSDictionary *attributes = @{NSFontAttributeName: self.font};
+        if (self.textAlignment == NSTextAlignmentCenter) {
+            drawWidth = floorf((self.frame.size.width - [line sizeWithAttributes:attributes].width) / 2);
+        } else if (self.textAlignment == NSTextAlignmentRight) {
+            drawWidth = (self.frame.size.width - [line sizeWithAttributes:attributes].width);
         }
         
-        [line drawAtPoint:CGPointMake(drawWidth, drawHeight) forWidth:self.frame.size.width withFont:self.font fontSize:self.font.pointSize lineBreakMode:UILineBreakModeClip baselineAdjustment:UIBaselineAdjustmentNone];
+        [line drawAtPoint:CGPointMake(drawWidth, drawHeight)
+                 forWidth:self.frame.size.width
+                 withFont:self.font
+                 fontSize:self.font.pointSize
+            lineBreakMode:NSLineBreakByClipping
+       baselineAdjustment:UIBaselineAdjustmentNone];
     }
 }
 
@@ -101,8 +107,8 @@
             NSString *word = [stringsArray objectAtIndex:i];
             
           // NSLog(@"%f,%f",[[line stringByAppendingFormat:@"%@ ", word] sizeWithFont:self.font].width,self.frame.size.width);
-            
-            if ([[line stringByAppendingFormat:@"%@ ", word] sizeWithFont:self.font].width <= self.frame.size.width) {
+            NSDictionary *attributes = @{NSFontAttributeName: self.font};
+            if ([[line stringByAppendingFormat:@"%@ ", word] sizeWithAttributes:attributes].width <= self.frame.size.width) {
                 line = [line stringByAppendingFormat:@"%@ ", word];
                 [wordsToRemove addIndex:i];
             } else {

@@ -41,7 +41,7 @@ static ApplicationTools *sharedInstance = nil;
      delegate:nil];*/
     // Initialize Google Analytics with a 120-second dispatch interval. There is a
     // tradeoff between battery usage and timely dispatch.
-    [GAI sharedInstance].debug = YES;
+//    [GAI sharedInstance].debug = YES;
     [GAI sharedInstance].dispatchInterval = 120;
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     self.tracker = [[GAI sharedInstance] trackerWithTrackingId:GANTrackerID];
@@ -63,7 +63,8 @@ static ApplicationTools *sharedInstance = nil;
 		//dbgLog(@"GANError: %@", error);
 	}*/
     
-    [[GAI sharedInstance].defaultTracker sendView:visibleItem];
+    [tracker set:visibleItem value:visibleItem];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
     
 #endif
 }
@@ -88,10 +89,11 @@ static ApplicationTools *sharedInstance = nil;
 	{
 		//dbgLog(@"GANError: %@", error);
 	}*/
-    [[GAI sharedInstance].defaultTracker sendEventWithCategory:visibleItem
-                                                    withAction:event
-                                                     withLabel:label
-                                                     withValue:value];
+    
+    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:visibleItem
+                                                          action:event
+                                                           label:label
+                                                           value:value] build]];
     
    
 #endif
@@ -110,10 +112,11 @@ static ApplicationTools *sharedInstance = nil;
 		//dbgLog(@"GANError: %@", error);
 	}*/
     
-    [[GAI sharedInstance].defaultTracker sendEventWithCategory:@"SystemEvent"
-                                                    withAction:event
-                                                     withLabel:label
-                                                     withValue:value];
+    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"SystemEvent"
+                                                          action:event
+                                                           label:label
+                                                           value:value] build]];
+
 #endif
 }
 

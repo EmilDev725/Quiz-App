@@ -35,7 +35,7 @@
 - (int) returnTypeLengthForSelector:(SEL)selector
 {
 	NSMethodSignature *ms = [self methodSignatureForSelector:selector];
-	return [ms methodReturnLength];
+	return (int)[ms methodReturnLength];
 }
 
 // Choose the first selector that an object can respond to
@@ -71,7 +71,7 @@
 	[inv setSelector:selector];
 	
 	int argcount = 2;
-	int totalArgs = [ms numberOfArguments];
+	int totalArgs = (int)[ms numberOfArguments];
 	
 	while (argcount < totalArgs)
 	{
@@ -163,7 +163,7 @@
 	
 	if (argcount != totalArgs) 
 	{
-		printf("Invocation argument count mismatch: %d expected, %d sent\n", [ms numberOfArguments], argcount);
+        printf("Invocation argument count misma%luh: %d expected, %d sent(unsigned long)\n", (unsigned long)[ms numberOfArguments], argcount);
 		return NULL;
 	}
 	

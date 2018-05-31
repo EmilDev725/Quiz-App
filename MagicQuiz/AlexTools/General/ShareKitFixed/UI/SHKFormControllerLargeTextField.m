@@ -182,7 +182,7 @@
 		aLabel.backgroundColor = [UIColor clearColor];
 		aLabel.opaque = NO;
 		aLabel.font = [UIFont boldSystemFontOfSize:14];
-		aLabel.textAlignment = UITextAlignmentRight;		
+		aLabel.textAlignment = NSTextAlignmentRight;		
 		aLabel.autoresizesSubviews = YES;
 		aLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
 		self.counter = aLabel;
@@ -197,7 +197,7 @@
     
     if (self.maxTextLength) {
         countNumber = (self.image?(self.maxTextLength - self.imageTextLength):self.maxTextLength) - self.textView.text.length;
-        count = [NSString stringWithFormat:@"%i", countNumber];
+        count = [NSString stringWithFormat:@"%li", (long)countNumber];
     } else {
         count = @"";
     }

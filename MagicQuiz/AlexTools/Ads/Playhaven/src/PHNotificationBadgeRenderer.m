@@ -49,7 +49,9 @@ static UIImage *BadgeImage;
     [BadgeImage drawInRect:CGRectMake(0, 0, notificationSize.width, BadgeImage.size.height)];
 
     [[UIColor whiteColor] set];
-    [value drawAtPoint:CGPointMake(10.0f, 1.0f) withFont:[UIFont boldSystemFontOfSize:17.0f]];
+    
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f]};
+    [value drawAtPoint:CGPointMake(10.0f, 1.0f) withAttributes:attributes];
 }
 
 - (CGSize)sizeForNotification:(NSDictionary *)notificationData
@@ -59,7 +61,8 @@ static UIImage *BadgeImage;
         return CGSizeZero;
     }
 
-    CGFloat valueWidth = [value sizeWithFont:[UIFont boldSystemFontOfSize:17.0f]].width + 20.0f;
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f]};
+    CGFloat valueWidth = [value sizeWithAttributes:attributes].width + 20.0f;
     return CGSizeMake(valueWidth, BadgeImage.size.height);
 }
 @end

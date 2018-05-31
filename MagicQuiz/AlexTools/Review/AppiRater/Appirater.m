@@ -61,7 +61,7 @@ static BOOL _debug = NO;
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_5_0
 	static id<AppiraterDelegate> _delegate;
 #else
-	__weak static id<AppiraterDelegate> _delegate;
+	static id<AppiraterDelegate> _delegate;
 #endif
 static BOOL _usesAnimation = TRUE;
 static BOOL _openInAppStore = NO;
@@ -194,12 +194,12 @@ static BOOL _modalOpen = false;
 		return NO;
 	
 	// check if the app has been used enough
-	int useCount = [userDefaults integerForKey:kAppiraterUseCount];
+	int useCount = (int)[userDefaults integerForKey:kAppiraterUseCount];
 	if (useCount <= _usesUntilPrompt)
 		return NO;
 	
 	// check if the user has done enough significant events
-	int sigEventCount = [userDefaults integerForKey:kAppiraterSignificantEventCount];
+	int sigEventCount = (int)[userDefaults integerForKey:kAppiraterSignificantEventCount];
 	if (sigEventCount <= _significantEventsUntilPrompt)
 		return NO;
 	
@@ -248,7 +248,7 @@ static BOOL _modalOpen = false;
 		}
 		
 		// increment the use count
-		int useCount = [userDefaults integerForKey:kAppiraterUseCount];
+		int useCount = (int)[userDefaults integerForKey:kAppiraterUseCount];
 		useCount++;
 		[userDefaults setInteger:useCount forKey:kAppiraterUseCount];
 		if (_debug)
@@ -296,7 +296,7 @@ static BOOL _modalOpen = false;
 		}
 		
 		// increment the significant event count
-		int sigEventCount = [userDefaults integerForKey:kAppiraterSignificantEventCount];
+		int sigEventCount = (int)[userDefaults integerForKey:kAppiraterSignificantEventCount];
 		sigEventCount++;
 		[userDefaults setInteger:sigEventCount forKey:kAppiraterSignificantEventCount];
 		if (_debug)
@@ -457,7 +457,7 @@ static BOOL _modalOpen = false;
 			[self setModalOpen:YES];
 			//Temporarily use a black status bar to match the StoreKit view.
 			[self setStatusBarStyle:[UIApplication sharedApplication].statusBarStyle];
-			[[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:_usesAnimation];
+			[[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent animated:_usesAnimation];
 		}];
 	
 	//Use the standard openUrl method if StoreKit is unavailable.

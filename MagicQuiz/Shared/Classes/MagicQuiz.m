@@ -225,7 +225,7 @@ extern CGFloat fontSizeRatio;
             }
         }
         
-        NSLog(@"%i",[self.questionArray count]);
+        NSLog(@"%lu",(unsigned long)[self.questionArray count]);
         
         [self saveGameData];
     }

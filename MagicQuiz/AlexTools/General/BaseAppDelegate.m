@@ -64,10 +64,13 @@ static id newMoveToSuperviewPlusSettingExclusiveTouch(id self,SEL selector,...)
     [[UAPush shared] handleNotification:[launchOptions valueForKey:UIApplicationLaunchOptionsRemoteNotificationKey]
                        applicationState:application.applicationState]; */
     
-     [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    //Push Notification
+    [self registerForRemoteNotifications];
     
     return YES;
 }
+
+#pragma mark - AppiraterDelegate
 
 -(void)appiraterDidDisplayAlert:(Appirater *)appirater
 {
@@ -87,6 +90,24 @@ static id newMoveToSuperviewPlusSettingExclusiveTouch(id self,SEL selector,...)
 -(void)appiraterDidOptToRemindLater:(Appirater *)appirater
 {
     [[ApplicationTools sharedInstance] eventHappened:@"Appirater: DidOptToRemindLater" label:nil value:0];
+}
+
+#pragma mark - Push Notification
+- (void) registerForRemoteNotifications {
+    if(SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(@"10.0")){
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
+            if(!error){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [[UIApplication sharedApplication] registerForRemoteNotifications];
+                });
+            }
+        }];
+    }
+    else {
+//        [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
 }
 
 - (void)application:(UIApplication *)app
@@ -136,11 +157,31 @@ didReceiveRemoteNotification:(NSDictionary *)userInfo
         appState = application.applicationState;
     }
     
-    [[UAPush shared] handleNotification:userInfo applicationState:appState];
-    [[UAPush shared] resetBadge];
+//    [[UAPush shared] handleNotification:userInfo applicationState:appState];
+//    [[UAPush shared] resetBadge];
+    
+    
+    [UAirship setLogLevel:UALogLevelTrace];
+    UAConfig *config = [UAConfig defaultConfig];
+    [UAirship takeOff:config];
+    UA_LDEBUG(@"Config:\n%@", [config description]);
+    [[UAirship push] resetBadge];
+    
 }
 
+//Called when a notification is delivered to a foreground app.
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
+    NSLog(@"User Info : %@",notification.request.content.userInfo);
+    completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+}
 
+//Called to let your app know which action was selected by the user for a given notification.
+- (void) userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+    NSLog(@"User Info : %@",response.notification.request.content.userInfo);
+    completionHandler();
+}
+
+#pragma mark - Life cycle functions
 - (void)applicationWillResignActive:(UIApplication *)application {
     
 }
@@ -162,13 +203,14 @@ didReceiveRemoteNotification:(NSDictionary *)userInfo
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-     [[UAPush shared] resetBadge];
+    [[UAirship push] resetBadge];
+//     [[UAPush shared] resetBadge];
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-     [UAirship land];
+    [UAirship land];
      [[ApplicationTools sharedInstance] appTerminate];
 }
 

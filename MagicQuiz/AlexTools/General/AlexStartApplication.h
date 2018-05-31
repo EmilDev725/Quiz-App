@@ -17,8 +17,10 @@
 #import "SHKVkontakte.h"
 
 
+
 #ifdef REVMOB_ID
-#import <RevMobAds/RevMobAds.h>
+//#import <RevMobAds/RevMobAds.h>
+#import <Revmob/Revmob.h>
 #endif
 
 #if defined GAME_CENTER
@@ -26,7 +28,7 @@
 #endif
 
 #if defined (ChartsBoostsAppID)
-#import "Chartboost.h"
+#import <Chartboost/Chartboost.h>
 #endif
 
 #ifdef PLAYHAVAN_TOKEN
@@ -74,7 +76,7 @@ typedef enum {
 - (void) gameCenterError:(GC_LOAD_PLACE)gcLoadPlace;
 @end
 
-@interface AlexStartApplication : NSObject <SHKSharerDelegate,ChartboostDelegate>
+@interface AlexStartApplication : NSObject <SHKSharerDelegate, ChartboostDelegate>
 {
 #ifdef PLAYHAVAN_TOKEN
     PHNotificationView *_notificationView;

@@ -108,8 +108,10 @@ static const CGFloat subtitleHeight = subtitleFontHeight * 1.25;
     if (!hasTitleSuffix) {
         self.textLabel.frame = CGRectMake(textLeft, titleTop, textWidth, titleHeight);
     } else {
-        CGSize titleSize = [self.textLabel.text sizeWithFont:self.textLabel.font];
-        CGSize spaceSize = [@" " sizeWithFont:self.textLabel.font];
+        NSDictionary *attributes = @{NSFontAttributeName: self.textLabel.font};
+
+        CGSize titleSize = [self.textLabel.text sizeWithAttributes:attributes];
+        CGSize spaceSize = [@" " sizeWithAttributes:attributes];
         CGFloat titleWidth = titleSize.width + spaceSize.width;
         self.textLabel.frame = CGRectMake(textLeft, titleTop, titleWidth, titleHeight);
         

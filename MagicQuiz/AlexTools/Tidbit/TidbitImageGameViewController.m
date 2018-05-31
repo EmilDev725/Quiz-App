@@ -55,7 +55,7 @@
 			else
 				[answerButton setTag:0];
 			
-			[lbQuestionNum setText:[NSString stringWithFormat:@"#%i",[TidbitGame sharedInstance].currentQuestionIndex]];
+            [lbQuestionNum setText:[NSString stringWithFormat:@"#%li",(long)[TidbitGame sharedInstance].currentQuestionIndex]];
 		}
 		
 		[self enableAnswerButtons:YES];

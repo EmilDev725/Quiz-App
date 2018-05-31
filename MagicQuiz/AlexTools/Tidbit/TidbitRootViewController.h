@@ -9,7 +9,7 @@
 #import "TidbitGame.h"
 #import "TidBitViewController.h"
 
-@interface TidbitRootViewController : TidBitViewController <GameCenterMainDelegate>
+@interface TidbitRootViewController : TidBitViewController <GameCenterMainDelegate, GKGameCenterControllerDelegate>
 {
 	UIButton *btAchievments,*btScores,*btSound;
     UILabel *lbCopyright;

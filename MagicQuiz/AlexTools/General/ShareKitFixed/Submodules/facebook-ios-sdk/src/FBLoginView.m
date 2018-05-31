@@ -195,7 +195,7 @@ CGSize g_imageSize;
     // add a label that will appear over the button
     self.label = [[[UILabel alloc] init] autorelease];
     self.label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    self.label.textAlignment = UITextAlignmentCenter;
+    self.label.textAlignment = NSTextAlignmentCenter;
     self.label.backgroundColor = [UIColor clearColor];
     self.label.font = [UIFont boldSystemFontOfSize:16.0];
     self.label.textColor = [UIColor whiteColor];
@@ -226,8 +226,10 @@ CGSize g_imageSize;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    CGSize logInSize = [[self logInText] sizeWithFont:self.label.font];
-    CGSize logOutSize = [[self logOutText] sizeWithFont:self.label.font];
+    NSDictionary *attributes = @{NSFontAttributeName: self.label.font};
+
+    CGSize logInSize = [[self logInText] sizeWithAttributes:attributes];
+    CGSize logOutSize = [[self logOutText] sizeWithAttributes:attributes];
     
     // Leave at least a small margin around the label.
     CGFloat desiredWidth = kButtonLabelX + 20 + MAX(logInSize.width, logOutSize.width);

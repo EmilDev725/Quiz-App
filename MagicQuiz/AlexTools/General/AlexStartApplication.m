@@ -89,8 +89,8 @@
 {
     [[NSUserDefaults standardUserDefaults] setInteger:remoteNotificationMessageIndex forKey:@"remoteNotificationMessageIndex"];
     
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:appActiveCount] forKey:@"appActiveCount"];
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:runCount] forKey:@"runCount"];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger: appActiveCount] forKey:@"appActiveCount"];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt: (int)runCount] forKey:@"runCount"];
     [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:@"appVersion"];
     [[NSUserDefaults standardUserDefaults] setObject:lastActiveDate forKey:@"lastActiveDate"];
     [[NSUserDefaults standardUserDefaults] setInteger:screenShowCount forKey:@"screenShowCount"];
@@ -432,16 +432,16 @@
     [self increaseAppActiveCount];
     
 #ifdef REVMOB_ID
-    [RevMobAds startSessionWithAppID:REVMOB_ID];
+    [Revmob initWithAppId: REVMOB_ID];
+    
+//    [RevMobAds startSessionWithAppID:REVMOB_ID];
 #endif
     
 #if defined (ChartsBoostsAppID)
-    cb = [Chartboost sharedChartboost];
-    cb.appId = ChartsBoostsAppID;
-    cb.appSignature = ChartBoostsAppSignature;
-    cb.delegate = self;
-    [cb startSession];
-    [cb cacheInterstitial:@"Menu"];
+    [Chartboost startWithAppId:ChartsBoostsAppID
+                  appSignature:ChartBoostsAppSignature
+                      delegate:self];
+    [Chartboost cacheInterstitial:@"Menu"];
 #endif    
     
 #ifdef PLAYHAVAN_TOKEN
@@ -480,23 +480,18 @@
 #endif
 }
 
+#pragma mark - Chartboost
 -(void) showChartboostAdsWithName:(NSString*) placeName
 {
 #if defined (ChartsBoostsAppID)
-    if(cb)
-    {
-        [cb showInterstitial:placeName];
-    }
+    [Chartboost showInterstitial:placeName];
 #endif
 }
 
 -(void) showChartboostAds
 {
 #if defined (ChartsBoostsAppID)
-    if(cb)
-    {
-        [cb showInterstitial:@"Menu"];
-    }
+    [Chartboost showInterstitial:@"Menu"];
 #endif
 }
 
@@ -683,15 +678,22 @@
 			
 			
 			achievement.percentComplete = percent;
-			[achievement reportAchievementWithCompletionHandler:^(NSError *error)
-			 {
-				 if (error != nil)
-				 {
-					 // Retain the achievement object and try again later (not shown).
-					 
-				 }
-				 
-			 }];
+//            [achievement reportAchievementWithCompletionHandler:^(NSError *error)
+//             {
+//                 if (error != nil)
+//                 {
+//                     // Retain the achievement object and try again later (not shown).
+//
+//                 }
+//
+//             }];
+            NSArray *achievements = [NSArray arrayWithObjects: achievement, nil];
+            [GKAchievement reportAchievements:achievements withCompletionHandler:^(NSError * _Nullable error) {
+                if (error != nil) {
+                    
+                }
+            }];
+            
 		}
 	}
 }
@@ -735,13 +737,19 @@
 	
     if ([self isUserLogin])
     {
-        GKScore *scoreReporter = [[[GKScore alloc] initWithCategory:leaderboard] autorelease];
+//        GKScore *scoreReporter = [[[GKScore alloc] initWithCategory:leaderboard] autorelease];
+        GKScore *scoreReporter = [[[GKScore alloc] initWithLeaderboardIdentifier:leaderboard] autorelease];
         scoreReporter.value = value;
-        [scoreReporter reportScoreWithCompletionHandler:^(NSError *error) {
-            
-            if (error != nil)
-            {
-                // handle the reporting error
+//        [scoreReporter reportScoreWithCompletionHandler:^(NSError *error) {
+//
+//            if (error != nil)
+//            {
+//                // handle the reporting error
+//            }
+//        }];
+        [GKScore reportScores:@[scoreReporter] withCompletionHandler:^(NSError * _Nullable error) {
+            if (error != nil) {
+                
             }
         }];
     }
@@ -760,10 +768,7 @@
 	}
 	
 	GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
-	
-    [localPlayer authenticateWithCompletionHandler:^(NSError *error) {
-		
-        
+    localPlayer.authenticateHandler = ^(UIViewController * _Nullable viewController, NSError * _Nullable error) {
         if(error == nil)
         {
             if (localPlayer.isAuthenticated)
@@ -799,8 +804,8 @@
                     GKLeaderboard *board = [[[GKLeaderboard alloc] init] autorelease];
                     
                     if(board != nil) {
-                        
-                        board.category = gcGlobalScoresTableID;
+                        board.identifier = gcGlobalScoresTableID;
+                        //                        board.category = gcGlobalScoresTableID;
                         board.timeScope = GKLeaderboardTimeScopeAllTime;
                         board.range = NSMakeRange(1, 1);
                         
@@ -823,7 +828,7 @@
                     }
                 }
             }
-		}
+        }
         else
         {
             if(error.code == 2)
@@ -835,7 +840,7 @@
             if ([delegate respondsToSelector:@selector(gameCenterError:)])
                 [delegate gameCenterError:gcLoadPlaceVal];
         }
-   }];
+    };
 }
 
 #endif

@@ -18,13 +18,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
-{
-    
-}
-
-- (void)achievementViewControllerDidFinish:(GKAchievementViewController *)viewController
-{
+- (void) gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController {
     
 }
 

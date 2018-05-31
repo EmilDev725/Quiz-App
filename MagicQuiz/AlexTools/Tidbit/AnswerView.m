@@ -72,7 +72,7 @@
         [lbUnlockedTitle setText:@""];
 	}
 	
-	NSLog(@"%i",[TidbitGame sharedInstance].currentQuestionIndex);
+    NSLog(@"%li",(long)[TidbitGame sharedInstance].currentQuestionIndex);
 	
 	if([TidbitGame sharedInstance].strikeNum >= 3 || [TidbitGame sharedInstance].rightQuestionsAnswered>=20)
 	{

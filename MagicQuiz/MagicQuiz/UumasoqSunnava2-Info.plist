@@ -8,18 +8,8 @@
 	<string>Uumasoq Sunaava 2</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>icon-120.png</string>
-		<string>icon-76.png</string>
-		<string>icon-152.png</string>
-		<string>icon_ipad@2x.png</string>
-		<string>icon@2x.png</string>
-		<string>icon.png</string>
-		<string>icon_ipad.png</string>
-	</array>
 	<key>CFBundleIdentifier</key>
-	<string>gl.kalak.uumasoq2</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -27,23 +17,27 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0</string>
+	<string>2.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.0</string>
+	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIInterfaceOrientation</key>
 	<string>UIInterfaceOrientationPortrait</string>
-	<key>UILaunchImageFile~ipad</key>
-	<string>Default_ipad.png</string>
 	<key>UILaunchImageFile~iphone</key>
 	<string>Default.png</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
+		<string>gamekit</string>
 		<string>gamekit</string>
 	</array>
 	<key>UIStatusBarHidden</key>

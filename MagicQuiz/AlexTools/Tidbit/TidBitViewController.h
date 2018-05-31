@@ -9,7 +9,7 @@
 #import <GameKit/GameKit.h>
 #import "BaseViewController.h"
 
-@interface TidBitViewController : BaseViewController <GKLeaderboardViewControllerDelegate, GKAchievementViewControllerDelegate>{
+@interface TidBitViewController : BaseViewController <GKGameCenterControllerDelegate>{
 	
     
 }

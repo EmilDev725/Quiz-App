@@ -203,7 +203,7 @@ NSString *readLineAsNSString(FILE *file)
     _delegate = nil;
     [_request release], _request = nil;
 
-    //[super dealloc]; // TODO: Why is super commented out?
+    [super dealloc]; // TODO: Why is super commented out?
 }
 
 - (void)start

@@ -19,7 +19,7 @@
  Created by Jesus Fernandez on 5/19/11.
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#import "PHPublisherSubContentRequest.h"
+#import "PHPublisherSubcontentRequest.h"
 #import "PHConstants.h"
 
 @implementation PHPublisherSubContentRequest

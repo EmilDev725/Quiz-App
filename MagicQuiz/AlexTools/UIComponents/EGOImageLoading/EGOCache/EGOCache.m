@@ -269,10 +269,15 @@ static EGOCache* __instance;
 - (NSData*)plistForKey:(NSString*)key; {  
 	NSData* plistData = [self dataForKey:key];
 	
-	return [NSPropertyListSerialization propertyListFromData:plistData
-                                          mutabilityOption:NSPropertyListImmutable
-                                                    format:nil
-                                          errorDescription:nil];
+//    return [NSPropertyListSerialization propertyListFromData:plistData
+//                                          mutabilityOption:NSPropertyListImmutable
+//                                                    format:nil
+//                                          errorDescription:nil];
+    
+    return [NSPropertyListSerialization propertyListWithData:plistData
+                                                     options:NSPropertyListImmutable
+                                                      format:nil
+                                                       error:nil];
 }
 
 - (void)setPlist:(id)plistObject forKey:(NSString*)key; {
@@ -281,9 +286,13 @@ static EGOCache* __instance;
 
 - (void)setPlist:(id)plistObject forKey:(NSString*)key withTimeoutInterval:(NSTimeInterval)timeoutInterval; {
 	// Binary plists are used over XML for better performance
-	NSData* plistData = [NSPropertyListSerialization dataFromPropertyList:plistObject 
-                                                                 format:NSPropertyListBinaryFormat_v1_0
-                                                       errorDescription:NULL];
+//    NSData* plistData = [NSPropertyListSerialization dataFromPropertyList:plistObject
+//                                                                 format:NSPropertyListBinaryFormat_v1_0
+//                                                       errorDescription:NULL];
+    NSData* plistData = [NSPropertyListSerialization dataWithPropertyList:plistData
+                                                                   format:NSPropertyListBinaryFormat_v1_0
+                                                                  options:NULL
+                                                                    error:NULL];
 	
 	[self setData:plistData forKey:key withTimeoutInterval:timeoutInterval];
 }

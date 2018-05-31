@@ -1006,7 +1006,7 @@
     if (__notes != nil) {
       [outProtocol writeFieldBeginWithName: @"notes" type: TType_LIST fieldID: 4];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__notes count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__notes count]];
         int i34;
         for (i34 = 0; i34 < [__notes count]; i34++)
         {
@@ -1021,7 +1021,7 @@
     if (__notebooks != nil) {
       [outProtocol writeFieldBeginWithName: @"notebooks" type: TType_LIST fieldID: 5];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__notebooks count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__notebooks count]];
         int i36;
         for (i36 = 0; i36 < [__notebooks count]; i36++)
         {
@@ -1036,7 +1036,7 @@
     if (__tags != nil) {
       [outProtocol writeFieldBeginWithName: @"tags" type: TType_LIST fieldID: 6];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__tags count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__tags count]];
         int i38;
         for (i38 = 0; i38 < [__tags count]; i38++)
         {
@@ -1051,7 +1051,7 @@
     if (__searches != nil) {
       [outProtocol writeFieldBeginWithName: @"searches" type: TType_LIST fieldID: 7];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__searches count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__searches count]];
         int i40;
         for (i40 = 0; i40 < [__searches count]; i40++)
         {
@@ -1066,7 +1066,7 @@
     if (__resources != nil) {
       [outProtocol writeFieldBeginWithName: @"resources" type: TType_LIST fieldID: 8];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__resources count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__resources count]];
         int i42;
         for (i42 = 0; i42 < [__resources count]; i42++)
         {
@@ -1081,7 +1081,7 @@
     if (__expungedNotes != nil) {
       [outProtocol writeFieldBeginWithName: @"expungedNotes" type: TType_LIST fieldID: 9];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__expungedNotes count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__expungedNotes count]];
         int i44;
         for (i44 = 0; i44 < [__expungedNotes count]; i44++)
         {
@@ -1096,7 +1096,7 @@
     if (__expungedNotebooks != nil) {
       [outProtocol writeFieldBeginWithName: @"expungedNotebooks" type: TType_LIST fieldID: 10];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__expungedNotebooks count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__expungedNotebooks count]];
         int i46;
         for (i46 = 0; i46 < [__expungedNotebooks count]; i46++)
         {
@@ -1111,7 +1111,7 @@
     if (__expungedTags != nil) {
       [outProtocol writeFieldBeginWithName: @"expungedTags" type: TType_LIST fieldID: 11];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__expungedTags count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__expungedTags count]];
         int i48;
         for (i48 = 0; i48 < [__expungedTags count]; i48++)
         {
@@ -1126,7 +1126,7 @@
     if (__expungedSearches != nil) {
       [outProtocol writeFieldBeginWithName: @"expungedSearches" type: TType_LIST fieldID: 12];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__expungedSearches count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__expungedSearches count]];
         int i50;
         for (i50 = 0; i50 < [__expungedSearches count]; i50++)
         {
@@ -1141,7 +1141,7 @@
     if (__linkedNotebooks != nil) {
       [outProtocol writeFieldBeginWithName: @"linkedNotebooks" type: TType_LIST fieldID: 13];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__linkedNotebooks count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__linkedNotebooks count]];
         int i52;
         for (i52 = 0; i52 < [__linkedNotebooks count]; i52++)
         {
@@ -1156,7 +1156,7 @@
     if (__expungedLinkedNotebooks != nil) {
       [outProtocol writeFieldBeginWithName: @"expungedLinkedNotebooks" type: TType_LIST fieldID: 14];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__expungedLinkedNotebooks count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__expungedLinkedNotebooks count]];
         int i54;
         for (i54 = 0; i54 < [__expungedLinkedNotebooks count]; i54++)
         {
@@ -2193,7 +2193,7 @@
     if (__tagGuids != nil) {
       [outProtocol writeFieldBeginWithName: @"tagGuids" type: TType_LIST fieldID: 5];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__tagGuids count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__tagGuids count]];
         int i59;
         for (i59 = 0; i59 < [__tagGuids count]; i59++)
         {
@@ -2568,7 +2568,7 @@
     if (__notes != nil) {
       [outProtocol writeFieldBeginWithName: @"notes" type: TType_LIST fieldID: 3];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__notes count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__notes count]];
         int i70;
         for (i70 = 0; i70 < [__notes count]; i70++)
         {
@@ -2583,7 +2583,7 @@
     if (__stoppedWords != nil) {
       [outProtocol writeFieldBeginWithName: @"stoppedWords" type: TType_LIST fieldID: 4];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__stoppedWords count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__stoppedWords count]];
         int i72;
         for (i72 = 0; i72 < [__stoppedWords count]; i72++)
         {
@@ -2598,7 +2598,7 @@
     if (__searchedWords != nil) {
       [outProtocol writeFieldBeginWithName: @"searchedWords" type: TType_LIST fieldID: 5];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__searchedWords count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__searchedWords count]];
         int i74;
         for (i74 = 0; i74 < [__searchedWords count]; i74++)
         {
@@ -3170,7 +3170,7 @@
     if (__tagGuids != nil) {
       [outProtocol writeFieldBeginWithName: @"tagGuids" type: TType_LIST fieldID: 12];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__tagGuids count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__tagGuids count]];
         int i79;
         for (i79 = 0; i79 < [__tagGuids count]; i79++)
         {
@@ -3560,7 +3560,7 @@
     if (__notes != nil) {
       [outProtocol writeFieldBeginWithName: @"notes" type: TType_LIST fieldID: 3];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__notes count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__notes count]];
         int i90;
         for (i90 = 0; i90 < [__notes count]; i90++)
         {
@@ -3575,7 +3575,7 @@
     if (__stoppedWords != nil) {
       [outProtocol writeFieldBeginWithName: @"stoppedWords" type: TType_LIST fieldID: 4];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__stoppedWords count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__stoppedWords count]];
         int i92;
         for (i92 = 0; i92 < [__stoppedWords count]; i92++)
         {
@@ -3590,7 +3590,7 @@
     if (__searchedWords != nil) {
       [outProtocol writeFieldBeginWithName: @"searchedWords" type: TType_LIST fieldID: 5];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__searchedWords count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__searchedWords count]];
         int i94;
         for (i94 = 0; i94 < [__searchedWords count]; i94++)
         {
@@ -4314,13 +4314,13 @@
     if (__notebookCounts != nil) {
       [outProtocol writeFieldBeginWithName: @"notebookCounts" type: TType_MAP fieldID: 1];
       {
-        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_I32 size: [__notebookCounts count]];
+        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_I32 size: (int)[__notebookCounts count]];
         NSEnumerator * _iter103 = [__notebookCounts keyEnumerator];
         id key104;
         while ((key104 = [_iter103 nextObject]))
         {
           [outProtocol writeString: key104];
-          [outProtocol writeI32: [[__notebookCounts objectForKey: key104] longValue]];
+          [outProtocol writeI32: (int32_t)[[__notebookCounts objectForKey: key104] longValue]];
         }
         [outProtocol writeMapEnd];
       }
@@ -4331,13 +4331,13 @@
     if (__tagCounts != nil) {
       [outProtocol writeFieldBeginWithName: @"tagCounts" type: TType_MAP fieldID: 2];
       {
-        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_I32 size: [__tagCounts count]];
+        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_I32 size: (int)[__tagCounts count]];
         NSEnumerator * _iter105 = [__tagCounts keyEnumerator];
         id key106;
         while ((key106 = [_iter105 nextObject]))
         {
           [outProtocol writeString: key106];
-          [outProtocol writeI32: [[__tagCounts objectForKey: key106] longValue]];
+          [outProtocol writeI32: (int32_t)[[__tagCounts objectForKey: key106] longValue]];
         }
         [outProtocol writeMapEnd];
       }
@@ -4799,7 +4799,7 @@
     if (__impressions != nil) {
       [outProtocol writeFieldBeginWithName: @"impressions" type: TType_LIST fieldID: 4];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__impressions count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__impressions count]];
         int i115;
         for (i115 = 0; i115 < [__impressions count]; i115++)
         {
@@ -4819,7 +4819,7 @@
     if (__clientProperties != nil) {
       [outProtocol writeFieldBeginWithName: @"clientProperties" type: TType_MAP fieldID: 6];
       {
-        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_STRING size: [__clientProperties count]];
+        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_STRING size: (int)[__clientProperties count]];
         NSEnumerator * _iter116 = [__clientProperties keyEnumerator];
         id key117;
         while ((key117 = [_iter116 nextObject]))
@@ -5187,7 +5187,7 @@
     if (__toAddresses != nil) {
       [outProtocol writeFieldBeginWithName: @"toAddresses" type: TType_LIST fieldID: 3];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__toAddresses count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__toAddresses count]];
         int i125;
         for (i125 = 0; i125 < [__toAddresses count]; i125++)
         {
@@ -5202,7 +5202,7 @@
     if (__ccAddresses != nil) {
       [outProtocol writeFieldBeginWithName: @"ccAddresses" type: TType_LIST fieldID: 4];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__ccAddresses count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__ccAddresses count]];
         int i127;
         for (i127 = 0; i127 < [__ccAddresses count]; i127++)
         {
@@ -5968,7 +5968,7 @@
     if (__notes != nil) {
       [outProtocol writeFieldBeginWithName: @"notes" type: TType_LIST fieldID: 1];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__notes count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__notes count]];
         int i138;
         for (i138 = 0; i138 < [__notes count]; i138++)
         {
@@ -5983,7 +5983,7 @@
     if (__notebooks != nil) {
       [outProtocol writeFieldBeginWithName: @"notebooks" type: TType_LIST fieldID: 2];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__notebooks count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__notebooks count]];
         int i140;
         for (i140 = 0; i140 < [__notebooks count]; i140++)
         {
@@ -5998,7 +5998,7 @@
     if (__tags != nil) {
       [outProtocol writeFieldBeginWithName: @"tags" type: TType_LIST fieldID: 3];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__tags count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__tags count]];
         int i142;
         for (i142 = 0; i142 < [__tags count]; i142++)
         {
@@ -9655,7 +9655,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i147;
         for (i147 = 0; i147 < [__success count]; i147++)
         {
@@ -12383,7 +12383,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i152;
         for (i152 = 0; i152 < [__success count]; i152++)
         {
@@ -12895,7 +12895,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i157;
         for (i157 = 0; i157 < [__success count]; i157++)
         {
@@ -15746,7 +15746,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i162;
         for (i162 = 0; i162 < [__success count]; i162++)
         {
@@ -25083,7 +25083,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__success count]];
         int i167;
         for (i167 = 0; i167 < [__success count]; i167++)
         {
@@ -27308,7 +27308,7 @@
     if (__noteGuids != nil) {
       [outProtocol writeFieldBeginWithName: @"noteGuids" type: TType_LIST fieldID: 2];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__noteGuids count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__noteGuids count]];
         int i172;
         for (i172 = 0; i172 < [__noteGuids count]; i172++)
         {
@@ -29045,7 +29045,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i177;
         for (i177 = 0; i177 < [__success count]; i177++)
         {
@@ -36721,7 +36721,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i182;
         for (i182 = 0; i182 < [__success count]; i182++)
         {
@@ -38441,7 +38441,7 @@
     if (__recipients != nil) {
       [outProtocol writeFieldBeginWithName: @"recipients" type: TType_LIST fieldID: 4];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__recipients count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__recipients count]];
         int i187;
         for (i187 = 0; i187 < [__recipients count]; i187++)
         {
@@ -39188,7 +39188,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i192;
         for (i192 = 0; i192 < [__success count]; i192++)
         {
@@ -39419,7 +39419,7 @@
     if (__sharedNotebookIds != nil) {
       [outProtocol writeFieldBeginWithName: @"sharedNotebookIds" type: TType_LIST fieldID: 2];
       {
-        [outProtocol writeListBeginWithElementType: TType_I64 size: [__sharedNotebookIds count]];
+        [outProtocol writeListBeginWithElementType: TType_I64 size: (int)[__sharedNotebookIds count]];
         int i197;
         for (i197 = 0; i197 < [__sharedNotebookIds count]; i197++)
         {
@@ -41161,7 +41161,7 @@
     if (__success != nil) {
       [outProtocol writeFieldBeginWithName: @"success" type: TType_LIST fieldID: 0];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__success count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__success count]];
         int i202;
         for (i202 = 0; i202 < [__success count]; i202++)
         {
@@ -47375,7 +47375,7 @@
   if (noteGuids != nil)  {
     [outProtocol writeFieldBeginWithName: @"noteGuids" type: TType_LIST fieldID: 2];
     {
-      [outProtocol writeListBeginWithElementType: TType_STRING size: [noteGuids count]];
+      [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[noteGuids count]];
       int i204;
       for (i204 = 0; i204 < [noteGuids count]; i204++)
       {
@@ -48563,7 +48563,7 @@
   if (recipients != nil)  {
     [outProtocol writeFieldBeginWithName: @"recipients" type: TType_LIST fieldID: 4];
     {
-      [outProtocol writeListBeginWithElementType: TType_STRING size: [recipients count]];
+      [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[recipients count]];
       int i206;
       for (i206 = 0; i206 < [recipients count]; i206++)
       {
@@ -48674,7 +48674,7 @@
   if (sharedNotebookIds != nil)  {
     [outProtocol writeFieldBeginWithName: @"sharedNotebookIds" type: TType_LIST fieldID: 2];
     {
-      [outProtocol writeListBeginWithElementType: TType_I64 size: [sharedNotebookIds count]];
+      [outProtocol writeListBeginWithElementType: TType_I64 size: (int)[sharedNotebookIds count]];
       int i208;
       for (i208 = 0; i208 < [sharedNotebookIds count]; i208++)
       {

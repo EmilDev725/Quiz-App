@@ -59,9 +59,9 @@ return(theCharacter);
 
 + (id)scannerWithData:(NSData *)inData
 {
-CDataScanner *theScanner = [[[self alloc] init] autorelease];
-theScanner.data = inData;
-return(theScanner);
+    CDataScanner *theScanner = [[[self alloc] init] autorelease];
+    theScanner.data = inData;
+    return(theScanner);
 }
 
 - (id)init

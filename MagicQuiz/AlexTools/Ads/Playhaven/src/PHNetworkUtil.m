@@ -157,7 +157,7 @@
     unsigned char messageDigest[CC_SHA1_DIGEST_LENGTH];
 
     CC_SHA1(CFDataGetBytePtr((CFDataRef)macBytes),
-            CFDataGetLength((CFDataRef)macBytes),
+            (unsigned int)CFDataGetLength((CFDataRef)macBytes),
             messageDigest);
 
     CFMutableStringRef string = CFStringCreateMutable(NULL, 40);

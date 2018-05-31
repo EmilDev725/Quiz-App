@@ -18,9 +18,13 @@
 	// Measure the font size, so the line fits the text.
 	// Could be that "titleLabel" is something else in other classes like UILable, dont know.
 	// So make sure you fix it here if you are enhancing UILabel or something else..
-	CGSize fontSize =[self.titleLabel.text sizeWithFont:self.titleLabel.font 
-											   forWidth:self.bounds.size.width
-										  lineBreakMode:UILineBreakModeTailTruncation];
+	NSDictionary *attributes = @{NSFontAttributeName: self.titleLabel.font};
+    CGSize size = CGSizeMake(self.bounds.size.width, MAXFLOAT);
+    CGSize fontSize = [self.titleLabel.text boundingRectWithSize:size
+                                                           options:NSStringDrawingUsesLineFragmentOrigin
+                                                        attributes:attributes
+                                                           context:nil].size;
+    
 	// Get the fonts color. 
 	const float * colors = CGColorGetComponents(self.titleLabel.textColor.CGColor);
 	// Sets the color to draw the line

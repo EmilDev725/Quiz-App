@@ -1446,7 +1446,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__viewedPromotions != nil) {
       [outProtocol writeFieldBeginWithName: @"viewedPromotions" type: TType_LIST fieldID: 5];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__viewedPromotions count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__viewedPromotions count]];
         int i7;
         for (i7 = 0; i7 < [__viewedPromotions count]; i7++)
         {
@@ -1468,7 +1468,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__recentMailedAddresses != nil) {
       [outProtocol writeFieldBeginWithName: @"recentMailedAddresses" type: TType_LIST fieldID: 7];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__recentMailedAddresses count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__recentMailedAddresses count]];
         int i9;
         for (i9 = 0; i9 < [__recentMailedAddresses count]; i9++)
         {
@@ -3639,7 +3639,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__keysOnly != nil) {
       [outProtocol writeFieldBeginWithName: @"keysOnly" type: TType_SET fieldID: 1];
       {
-        [outProtocol writeSetBeginWithElementType: TType_STRING size: [__keysOnly count]];
+        [outProtocol writeSetBeginWithElementType: TType_STRING size: (int)[__keysOnly count]];
         NSEnumerator * _iter17 = [__keysOnly objectEnumerator];
         id obj18;
         while ((obj18 = [_iter17 nextObject]))
@@ -3655,7 +3655,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__fullMap != nil) {
       [outProtocol writeFieldBeginWithName: @"fullMap" type: TType_MAP fieldID: 2];
       {
-        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_STRING size: [__fullMap count]];
+        [outProtocol writeMapBeginWithKeyType: TType_STRING valueType: TType_STRING size: (int)[__fullMap count]];
         NSEnumerator * _iter19 = [__fullMap keyEnumerator];
         id key20;
         while ((key20 = [_iter19 nextObject]))
@@ -6354,7 +6354,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__tagGuids != nil) {
       [outProtocol writeFieldBeginWithName: @"tagGuids" type: TType_LIST fieldID: 12];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__tagGuids count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__tagGuids count]];
         int i31;
         for (i31 = 0; i31 < [__tagGuids count]; i31++)
         {
@@ -6369,7 +6369,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__resources != nil) {
       [outProtocol writeFieldBeginWithName: @"resources" type: TType_LIST fieldID: 13];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__resources count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__resources count]];
         int i33;
         for (i33 = 0; i33 < [__resources count]; i33++)
         {
@@ -6391,7 +6391,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__tagNames != nil) {
       [outProtocol writeFieldBeginWithName: @"tagNames" type: TType_LIST fieldID: 15];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRING size: [__tagNames count]];
+        [outProtocol writeListBeginWithElementType: TType_STRING size: (int)[__tagNames count]];
         int i35;
         for (i35 = 0; i35 < [__tagNames count]; i35++)
         {
@@ -8725,7 +8725,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__sharedNotebookIds != nil) {
       [outProtocol writeFieldBeginWithName: @"sharedNotebookIds" type: TType_LIST fieldID: 13];
       {
-        [outProtocol writeListBeginWithElementType: TType_I64 size: [__sharedNotebookIds count]];
+        [outProtocol writeListBeginWithElementType: TType_I64 size: (int)[__sharedNotebookIds count]];
         int i43;
         for (i43 = 0; i43 < [__sharedNotebookIds count]; i43++)
         {
@@ -8740,7 +8740,7 @@ static NSString * EDAMEDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY = @"mail.smtp";
     if (__sharedNotebooks != nil) {
       [outProtocol writeFieldBeginWithName: @"sharedNotebooks" type: TType_LIST fieldID: 14];
       {
-        [outProtocol writeListBeginWithElementType: TType_STRUCT size: [__sharedNotebooks count]];
+        [outProtocol writeListBeginWithElementType: TType_STRUCT size: (int)[__sharedNotebooks count]];
         int i45;
         for (i45 = 0; i45 < [__sharedNotebooks count]; i45++)
         {
