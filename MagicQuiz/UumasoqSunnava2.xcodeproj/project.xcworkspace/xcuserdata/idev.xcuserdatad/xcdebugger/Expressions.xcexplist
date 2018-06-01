@@ -3,20 +3,15 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[CJSONScanner scanJSONDictionary:error:]:CJSONScanner.m">
+         contextName = "+[CDataScanner scannerWithData:]:CDataScanner.m">
          <PersistentStrings>
             <PersistentString
-               value = "[self currentCharacter]">
+               value = "theScanner.data">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "+[VSUtils isIPhone5Screen]:VSUtils.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "mainScreen.bounds.size">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "-[CJSONDeserializer deserializeAsDictionary:error:]:CJSONDeserializer.m">
       </ContextState>
       <ContextState
          contextName = "-[MagicQuiz loadGameData]:MagicQuiz.m">
@@ -38,13 +33,40 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[CJSONDeserializer deserializeAsDictionary:error:]:CJSONDeserializer.m">
-      </ContextState>
-      <ContextState
-         contextName = "+[CDataScanner scannerWithData:]:CDataScanner.m">
+         contextName = "-[CJSONScanner scanJSONDictionary:error:]:CJSONScanner.m">
          <PersistentStrings>
             <PersistentString
-               value = "theScanner.data">
+               value = "[self currentCharacter]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NTGImageGameViewController showAnswerView:]:NTGImageGameViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "answerView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "inView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[VSUtils isIPhone5Screen]:VSUtils.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainScreen.bounds.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NTGFinalScoreViewController viewWillAppear:]:NTGFinalScoreViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[TidbitGame sharedInstance].score">
+            </PersistentString>
+            <PersistentString
+               value = "[TidbitGame sharedInstance].secondsPassed">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

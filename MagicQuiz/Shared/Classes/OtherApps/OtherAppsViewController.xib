@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtherAppsViewController">
             <connections>
-                <outlet property="btMenu" destination="25" id="31"/>
+                <outlet property="btMenu" destination="ywX-dX-0rU" id="sIj-L0-k3f"/>
                 <outlet property="crossPromotionView" destination="26" id="33"/>
                 <outlet property="view" destination="24" id="29"/>
             </connections>
@@ -21,41 +23,66 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bkgd_simple@2x.jpg" id="28">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bkgd_simple@2x.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="28">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="25" customClass="VSButton">
-                    <rect key="frame" x="7" y="6" width="68" height="33"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
-                    <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="_Loc_Menu">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <metadata/>
-                    <connections>
-                        <action selector="onHome" destination="-1" eventType="touchUpInside" id="32"/>
-                    </connections>
-                </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="_Loc_Our_Apps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" minimumFontSize="10" id="27">
-                    <rect key="frame" x="90" y="2" width="214" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view tag="1000" contentMode="scaleToFill" id="26" customClass="CrossPromotionView">
-                    <rect key="frame" x="0.0" y="46" width="320" height="434"/>
-                    <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                <view tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26" customClass="CrossPromotionView">
+                    <rect key="frame" x="0.0" y="43" width="320" height="437"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvs-z3-Uo0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywX-dX-0rU" customClass="VSButton">
+                            <rect key="frame" x="8" y="7" width="57.5" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ywX-dX-0rU" secondAttribute="height" multiplier="68:33" id="tG3-FO-ypo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="_Loc_Menu">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onHome" destination="-1" eventType="touchUpInside" id="HVW-co-MB7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="_Loc_Our_Apps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="27">
+                            <rect key="frame" x="62" y="-1" width="196" height="44"/>
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="27" firstAttribute="centerX" secondItem="rvs-z3-Uo0" secondAttribute="centerX" id="4dr-hq-j9Q"/>
+                        <constraint firstItem="ywX-dX-0rU" firstAttribute="leading" secondItem="rvs-z3-Uo0" secondAttribute="leading" constant="8" id="GQG-sB-vih"/>
+                        <constraint firstAttribute="bottom" secondItem="ywX-dX-0rU" secondAttribute="bottom" constant="8" id="O7E-ix-S3f"/>
+                        <constraint firstItem="27" firstAttribute="centerY" secondItem="ywX-dX-0rU" secondAttribute="centerY" id="cmW-Iv-LZ3"/>
+                        <constraint firstItem="ywX-dX-0rU" firstAttribute="width" secondItem="rvs-z3-Uo0" secondAttribute="width" multiplier="0.18" id="xsA-bh-OYV"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rvs-z3-Uo0" firstAttribute="top" secondItem="24" secondAttribute="top" id="4ID-pG-Egt"/>
+                <constraint firstAttribute="bottom" secondItem="26" secondAttribute="bottom" id="9sC-Zq-mWe"/>
+                <constraint firstItem="28" firstAttribute="top" secondItem="24" secondAttribute="top" id="KQO-U3-80l"/>
+                <constraint firstItem="26" firstAttribute="top" secondItem="rvs-z3-Uo0" secondAttribute="bottom" id="KW1-eA-qZd"/>
+                <constraint firstItem="26" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="LP2-Sb-gYL"/>
+                <constraint firstAttribute="trailing" secondItem="rvs-z3-Uo0" secondAttribute="trailing" id="MHU-ux-fgC"/>
+                <constraint firstAttribute="trailing" secondItem="26" secondAttribute="trailing" id="Uoa-5V-Zye"/>
+                <constraint firstAttribute="bottom" secondItem="28" secondAttribute="bottom" id="d5w-ae-e02"/>
+                <constraint firstItem="28" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="nLc-8h-IZ9"/>
+                <constraint firstItem="26" firstAttribute="height" secondItem="24" secondAttribute="height" multiplier="0.91" id="o4K-Uc-iFs"/>
+                <constraint firstItem="rvs-z3-Uo0" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="r7j-UQ-dTJ"/>
+                <constraint firstAttribute="trailing" secondItem="28" secondAttribute="trailing" id="uLD-pp-MAn"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>

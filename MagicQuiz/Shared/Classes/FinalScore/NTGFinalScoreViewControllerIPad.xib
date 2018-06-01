@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment defaultVersion="1072" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NTGFinalScoreViewController">
@@ -26,139 +32,247 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bkgd_simple_ipad.jpg" id="4">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bkgd_simple_ipad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4">
                     <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7" customClass="VSButton">
-                    <rect key="frame" x="595" y="939" width="160" height="72"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
-                    <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="_Loc_Menu" backgroundImage="btn_menu_ipad.png">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="backToMenu" destination="-1" eventType="touchUpInside" id="17"/>
-                    </connections>
-                </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="10">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="10">
                     <rect key="frame" x="236" y="458" width="296" height="98"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="72"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="xxx_ipad.png" id="55">
-                    <rect key="frame" x="24" y="937" width="257" height="73"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="18">
-                    <rect key="frame" x="21" y="937" width="75" height="75"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="19">
-                    <rect key="frame" x="115" y="937" width="75" height="75"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="20">
-                    <rect key="frame" x="208" y="937" width="75" height="75"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="_Loc_Final_Score_Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="54">
-                    <rect key="frame" x="96" y="0.0" width="577" height="92"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="box_ipad.png" id="79">
-                    <rect key="frame" x="69" y="147" width="629" height="442"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="80" customClass="VSButton">
-                    <rect key="frame" x="110" y="488" width="256" height="72"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
-                    <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="_Loc_Play_Again">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onHome" destination="-1" eventType="touchUpInside" id="86"/>
-                    </connections>
-                </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AJUGAAVUTIT!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="81">
-                    <rect key="frame" x="120" y="239" width="527" height="106"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="106"/>
-                    <color key="textColor" red="0.96078437569999997" green="0.62352943419999995" blue="0.078431375319999996" alpha="1" colorSpace="deviceRGB"/>
-                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Akissutit eqqortut 20" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="82">
-                    <rect key="frame" x="126" y="173" width="516" height="72"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="54"/>
-                    <color key="textColor" red="0.96078437569999997" green="0.62352943419999995" blue="0.078431375319999996" alpha="1" colorSpace="deviceRGB"/>
-                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="200" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="83">
-                    <rect key="frame" x="119" y="353" width="252" height="132"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="117"/>
-                    <color key="textColor" red="1" green="0.99607849120000003" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ac_chicken.png" id="85">
-                    <rect key="frame" x="386" y="353" width="331" height="294"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="95">
-                    <rect key="frame" x="58" y="666" width="353" height="169"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" backgroundImage="promo_games_eng.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onPromo" destination="-1" eventType="touchUpInside" id="maZ-Da-xwb"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="96">
-                    <rect key="frame" x="419" y="680" width="279" height="123"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" backgroundImage="rate_button_eng.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="rateApp" destination="-1" eventType="touchUpInside" id="98"/>
-                    </connections>
-                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnI-7c-Uqe">
+                    <rect key="frame" x="0.0" y="103" width="768" height="818.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="box_ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="79">
+                            <rect key="frame" x="69" y="86" width="629" height="442"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="629" id="FUC-Rt-3Ua"/>
+                                <constraint firstAttribute="height" constant="442" id="Gyn-SO-hyD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Akissutit eqqortut 20" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="82">
+                            <rect key="frame" x="126" y="96" width="516" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="516" id="2xB-lw-tnq"/>
+                                <constraint firstAttribute="height" constant="72" id="kw2-HL-pEg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="54"/>
+                            <color key="textColor" red="0.94290608167648315" green="0.5554080605506897" blue="0.073252290487289429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AJUGAAVUTIT!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="81">
+                            <rect key="frame" x="120" y="178" width="527" height="106"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="527" id="MbN-Zj-k99"/>
+                                <constraint firstAttribute="height" constant="106" id="OJ5-wH-bPD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="106"/>
+                            <color key="textColor" red="0.94290608167648315" green="0.5554080605506897" blue="0.073252290487289429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="200" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="83">
+                            <rect key="frame" x="89" y="284" width="320" height="132"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="8ai-5g-eaX"/>
+                                <constraint firstAttribute="height" constant="132" id="p3K-QY-2ev"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="117"/>
+                            <color key="textColor" red="0.99986922740936279" green="0.99475228786468506" blue="0.99998354911804199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80" customClass="VSButton">
+                            <rect key="frame" x="121" y="416" width="256" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="Swe-x8-jOC"/>
+                                <constraint firstAttribute="width" constant="256" id="X4B-sG-gBM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="_Loc_Play_Again">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onHome" destination="-1" eventType="touchUpInside" id="86"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ac_chicken.png" translatesAutoresizingMaskIntoConstraints="NO" id="85">
+                            <rect key="frame" x="417" y="284" width="331" height="294"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="294" id="Ii3-4f-MDs"/>
+                                <constraint firstAttribute="width" constant="331" id="hHc-CE-Ek0"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95">
+                            <rect key="frame" x="64" y="591" width="353" height="169"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="169" id="6Gu-Ar-dSk"/>
+                                <constraint firstAttribute="width" constant="353" id="BEB-me-DhB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="promo_games_eng.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onPromo" destination="-1" eventType="touchUpInside" id="maZ-Da-xwb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96">
+                            <rect key="frame" x="424" y="606" width="279" height="123"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="123" id="WIr-sC-sFc"/>
+                                <constraint firstAttribute="width" constant="279" id="n47-xB-CEj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="rate_button_eng.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="rateApp" destination="-1" eventType="touchUpInside" id="98"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="83" firstAttribute="leading" secondItem="79" secondAttribute="leading" constant="20" id="2fV-dI-3OI"/>
+                        <constraint firstItem="81" firstAttribute="top" secondItem="82" secondAttribute="bottom" constant="10" id="53R-3c-Q1L"/>
+                        <constraint firstItem="82" firstAttribute="top" secondItem="79" secondAttribute="top" constant="10" id="CeE-6J-IZH"/>
+                        <constraint firstItem="79" firstAttribute="centerX" secondItem="pnI-7c-Uqe" secondAttribute="centerX" id="FeF-FF-LHQ"/>
+                        <constraint firstItem="80" firstAttribute="centerX" secondItem="83" secondAttribute="centerX" id="IRP-qV-Jwd"/>
+                        <constraint firstItem="82" firstAttribute="centerX" secondItem="pnI-7c-Uqe" secondAttribute="centerX" id="JUQ-HW-G8k"/>
+                        <constraint firstItem="83" firstAttribute="top" secondItem="81" secondAttribute="bottom" id="Kwm-66-5mK"/>
+                        <constraint firstItem="81" firstAttribute="centerX" secondItem="pnI-7c-Uqe" secondAttribute="centerX" id="L2h-Xe-iJw"/>
+                        <constraint firstItem="95" firstAttribute="centerY" secondItem="pnI-7c-Uqe" secondAttribute="centerY" multiplier="1.65" id="LSI-Kh-QJk"/>
+                        <constraint firstItem="85" firstAttribute="bottom" secondItem="79" secondAttribute="bottom" constant="50" id="LgP-D2-Iu1"/>
+                        <constraint firstItem="96" firstAttribute="trailing" secondItem="79" secondAttribute="trailing" constant="5" id="Nwr-zU-ZnI"/>
+                        <constraint firstItem="85" firstAttribute="trailing" secondItem="79" secondAttribute="trailing" constant="50" id="Ueh-yo-Ocs"/>
+                        <constraint firstItem="79" firstAttribute="centerY" secondItem="pnI-7c-Uqe" secondAttribute="centerY" multiplier="0.75" id="bK1-Xe-zMa"/>
+                        <constraint firstItem="96" firstAttribute="top" secondItem="95" secondAttribute="top" constant="15" id="ohe-cW-5GG"/>
+                        <constraint firstItem="80" firstAttribute="top" secondItem="83" secondAttribute="bottom" id="omS-7A-zjp"/>
+                        <constraint firstItem="95" firstAttribute="leading" secondItem="79" secondAttribute="leading" constant="-5" id="six-Gx-hH0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEt-7K-yLt">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="102.5"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="_Loc_Final_Score_Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54">
+                            <rect key="frame" x="48" y="8" width="672" height="86"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="54" firstAttribute="centerX" secondItem="QEt-7K-yLt" secondAttribute="centerX" id="4Ti-ln-xKx"/>
+                        <constraint firstItem="54" firstAttribute="centerY" secondItem="QEt-7K-yLt" secondAttribute="centerY" id="Lcb-yL-ZBM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQe-3G-ckq">
+                    <rect key="frame" x="0.0" y="921.5" width="768" height="102.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="xxx_ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="55">
+                            <rect key="frame" x="24" y="20.5" width="216.5" height="61.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="55" secondAttribute="height" multiplier="257:73" id="56I-h2-xr0"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                            <rect key="frame" x="24" y="20.5" width="61.5" height="61.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="18" secondAttribute="height" multiplier="1:1" id="T2y-Ab-f5j"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                            <rect key="frame" x="101.5" y="20.5" width="61.5" height="61.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="19" secondAttribute="height" multiplier="1:1" id="Rgc-Ek-Qki"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                            <rect key="frame" x="179" y="20.5" width="61.5" height="61.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="20" secondAttribute="height" multiplier="1:1" id="hpq-JK-ebt"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7" customClass="VSButton">
+                            <rect key="frame" x="594" y="15.5" width="150" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="Pgj-rW-QLN"/>
+                                <constraint firstAttribute="width" constant="150" id="Yl0-lv-Mdk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="_Loc_Menu" backgroundImage="btn_menu_ipad.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backToMenu" destination="-1" eventType="touchUpInside" id="17"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="24" id="4b5-XD-2Uq"/>
+                        <constraint firstItem="19" firstAttribute="width" secondItem="18" secondAttribute="width" id="4hQ-XI-29k"/>
+                        <constraint firstItem="20" firstAttribute="bottom" secondItem="55" secondAttribute="bottom" id="Lpr-vq-252"/>
+                        <constraint firstItem="20" firstAttribute="top" secondItem="55" secondAttribute="top" id="ZHb-vt-0BL"/>
+                        <constraint firstItem="55" firstAttribute="height" secondItem="PQe-3G-ckq" secondAttribute="height" multiplier="0.6" id="dHR-1e-AQj"/>
+                        <constraint firstItem="18" firstAttribute="leading" secondItem="55" secondAttribute="leading" id="gFK-lC-p1k"/>
+                        <constraint firstItem="18" firstAttribute="top" secondItem="55" secondAttribute="top" id="hLv-Av-YMm"/>
+                        <constraint firstItem="7" firstAttribute="centerY" secondItem="PQe-3G-ckq" secondAttribute="centerY" id="lcT-5u-PZo"/>
+                        <constraint firstItem="19" firstAttribute="centerX" secondItem="55" secondAttribute="centerX" id="p9e-WR-J1m"/>
+                        <constraint firstItem="55" firstAttribute="centerY" secondItem="PQe-3G-ckq" secondAttribute="centerY" id="pE9-gg-QeH"/>
+                        <constraint firstItem="20" firstAttribute="trailing" secondItem="55" secondAttribute="trailing" id="wLt-Lb-YRm"/>
+                        <constraint firstItem="18" firstAttribute="bottom" secondItem="55" secondAttribute="bottom" id="wyE-ha-7XW"/>
+                        <constraint firstItem="55" firstAttribute="leading" secondItem="PQe-3G-ckq" secondAttribute="leading" constant="24" id="yET-me-IT6"/>
+                        <constraint firstItem="19" firstAttribute="centerY" secondItem="18" secondAttribute="centerY" id="zE9-yV-ueg"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="0.91764712329999998" green="0.91764712329999998" blue="0.91764712329999998" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" red="0.89730268716812134" green="0.89727586507797241" blue="0.89729106426239014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pnI-7c-Uqe" secondAttribute="trailing" id="09e-iR-kb6"/>
+                <constraint firstItem="pnI-7c-Uqe" firstAttribute="top" secondItem="QEt-7K-yLt" secondAttribute="bottom" id="8lL-ce-wSS"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" id="9PS-gc-9RT"/>
+                <constraint firstAttribute="bottom" secondItem="4" secondAttribute="bottom" id="KaP-Ra-fo8"/>
+                <constraint firstItem="QEt-7K-yLt" firstAttribute="height" secondItem="1" secondAttribute="height" multiplier="0.1" id="KbP-kN-YAp"/>
+                <constraint firstItem="QEt-7K-yLt" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="LbS-K3-UV5"/>
+                <constraint firstItem="PQe-3G-ckq" firstAttribute="height" secondItem="1" secondAttribute="height" multiplier="0.1" id="MXq-uZ-yZD"/>
+                <constraint firstItem="pnI-7c-Uqe" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="PUW-5M-bl6"/>
+                <constraint firstAttribute="trailing" secondItem="PQe-3G-ckq" secondAttribute="trailing" id="Pa5-dd-MeQ"/>
+                <constraint firstItem="PQe-3G-ckq" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="UKe-6h-Vid"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="VeP-Rq-iME"/>
+                <constraint firstAttribute="trailing" secondItem="QEt-7K-yLt" secondAttribute="trailing" id="bCS-Yn-k1P"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="cRE-w8-2QY"/>
+                <constraint firstAttribute="bottom" secondItem="PQe-3G-ckq" secondAttribute="bottom" id="f4f-mV-76c"/>
+                <constraint firstItem="QEt-7K-yLt" firstAttribute="top" secondItem="1" secondAttribute="top" id="qmd-sl-jna"/>
+                <constraint firstItem="PQe-3G-ckq" firstAttribute="top" secondItem="pnI-7c-Uqe" secondAttribute="bottom" id="tqa-vS-cqn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
     <resources>
         <image name="ac_chicken.png" width="1000" height="1134"/>
         <image name="bkgd_simple_ipad.jpg" width="768" height="1024"/>
-        <image name="box_ipad.png" width="540" height="371"/>
+        <image name="box_ipad.png" width="539" height="370"/>
         <image name="btn_menu_ipad.png" width="1000" height="1134"/>
         <image name="promo_games_eng.png" width="700" height="333"/>
         <image name="rate_button_eng.png" width="600" height="267"/>

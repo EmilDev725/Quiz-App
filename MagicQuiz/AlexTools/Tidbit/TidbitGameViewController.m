@@ -19,7 +19,7 @@
 
 @synthesize lbQuestionNum,lbScore,lbQuestionText,answerView,exitGameView,achievmentView;
 @synthesize btAnswer1,btAnswer2,btAnswer3,btAnswer4,btMenu;
-@synthesize answerButtonsArray,inView;
+@synthesize answerButtonsArray,inView, questionView;
 @synthesize imStrike1,imStrike2,imStrike3;
 @synthesize btPromo;
 
@@ -221,6 +221,7 @@
 	
 	if(![answerView superview])
 	{
+        [answerView setFrame: questionView.frame];
 		[inView addSubview:answerView];
         
         questionSituation = Q_ANSWERED;
@@ -334,9 +335,15 @@
 	[UIView setAnimationDidStopSelector:@selector(leftAnimFinished)];
 	
 	if(![VSUtils isIPad])
-		[inView setFrame:CGRectMake(-320, 44, 320, 394)];
+		[inView setFrame:CGRectMake(-self.view.bounds.size.width,
+                                    inView.frame.origin.y,
+                                    inView.bounds.size.width,
+                                    inView.bounds.size.height)];
 	else {
-		[inView setFrame:CGRectMake(-773, 91, 773, 846)];
+        [inView setFrame:CGRectMake(-self.view.bounds.size.width,
+                                    inView.frame.origin.y,
+                                    inView.bounds.size.width,
+                                    inView.bounds.size.height)];
 	}
 	
 	[UIView commitAnimations];
@@ -383,6 +390,8 @@
 -(IBAction) backToMenu
 {
     [[TidbitGame sharedInstance] playSound:MCsoundButtonClick];
+    
+    [exitGameView setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     
     if(![exitGameView superview])
 	{

@@ -26,6 +26,7 @@ typedef enum {
 	AnswerView *answerView;
 	ExitGameView *exitGameView;
 	UIView *inView;
+    UIView *questionView;
 	NSMutableArray *answerButtonsArray;
 	UIImageView *imStrike1,*imStrike2,*imStrike3;
     AchievmentView *achievmentView;
@@ -41,6 +42,7 @@ typedef enum {
 @property (nonatomic, retain) IBOutlet AnswerView *answerView;
 @property (nonatomic, retain) IBOutlet ExitGameView *exitGameView;
 @property (nonatomic, retain) IBOutlet UIView *inView;
+@property (nonatomic, retain) IBOutlet UIView *questionView;
 @property (nonatomic, retain) IBOutlet UIImageView *imStrike1,*imStrike2,*imStrike3;
 @property (nonatomic, retain) NSMutableArray *answerButtonsArray;
 @property (nonatomic, retain) IBOutlet AchievmentView *achievmentView;

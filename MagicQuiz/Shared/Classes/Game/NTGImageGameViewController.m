@@ -82,22 +82,26 @@
 	
 	if(![answerView superview])
 	{
-		[inView addSubview:answerView];
+        [inView addSubview:answerView];
         
         questionSituation = Q_ANSWERED;
         
         [self hideAnswerButtons:YES];
 		[answerView setGUIForQuestion:[TidbitGame sharedInstance].currentQuestion result:result];
         
-        if([VSUtils isIPad])
-            [answerView setFrame:CGRectMake(111, 341, 552, 380)];
-        else
-        {
-            if([VSUtils isIPhone5Screen])
-                [answerView setFrame:CGRectMake(21, 170, 276, 190)];
-            else
-                [answerView setFrame:CGRectMake(21, 156, 276, 196)];
-        }
+        [answerView setFrame: CGRectMake((self.view.bounds.size.width - answerView.bounds.size.width) / 2,
+                                         questionView.frame.origin.y,
+                                         answerView.bounds.size.width,
+                                         answerView.bounds.size.height)];
+//        if([VSUtils isIPad])
+//            [answerView setFrame:CGRectMake(111, 341, 552, 380)];
+//        else
+//        {
+//            if([VSUtils isIPhone5Screen])
+//                [answerView setFrame:CGRectMake(21, 170, 276, 190)];
+//            else
+//                [answerView setFrame:CGRectMake(21, 156, 276, 196)];
+//        }
 	}
     
     [Localization localizeView:answerView];

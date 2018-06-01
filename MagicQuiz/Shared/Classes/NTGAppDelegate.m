@@ -48,10 +48,11 @@
         nibName =  @"NTGRootViewControllerIPad";
     else
     {
-        if([VSUtils isIPhone5Screen])
-            nibName = @"NTGRootViewController-IPhone5";
-        else
-            nibName = @"NTGRootViewController";
+        nibName = @"NTGRootViewController";
+//        if([VSUtils isIPhone5Screen])
+//            nibName = @"NTGRootViewController-IPhone5";
+//        else
+//            nibName = @"NTGRootViewController";
     }
     
     NTGRootViewController *rootViewController = [[[NTGRootViewController alloc] initWithNibName:nibName bundle:[NSBundle mainBundle]] autorelease];

@@ -33,6 +33,8 @@
 	<string>Default.png</string>
 	<key>UILaunchImageFile~ipad</key>
 	<string>Default_ipad.png</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -40,6 +42,8 @@
 		<string>gamekit</string>
 		<string>gamekit</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
