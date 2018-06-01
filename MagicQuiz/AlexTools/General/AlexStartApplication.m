@@ -445,13 +445,13 @@
 #endif    
     
 #ifdef PLAYHAVAN_TOKEN
-    [[PHPublisherContentRequest requestForApp: PLAYHAVAN_TOKEN secret: PLAYHAVAN_SECRET placement:PLAYHAVAN_PLACE delegate:self] preload]; //level_complete
-    
-    if(!_notificationView)
-    {
-        _notificationView = [[PHNotificationView alloc] initWithApp:PLAYHAVAN_TOKEN secret:PLAYHAVAN_SECRET placement:PLAYHAVAN_PLACE];
-        _notificationView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
-    }
+//    [[PHPublisherContentRequest requestForApp: PLAYHAVAN_TOKEN secret: PLAYHAVAN_SECRET placement:PLAYHAVAN_PLACE delegate:self] preload]; //level_complete
+//    
+//    if(!_notificationView)
+//    {
+//        _notificationView = [[PHNotificationView alloc] initWithApp:PLAYHAVAN_TOKEN secret:PLAYHAVAN_SECRET placement:PLAYHAVAN_PLACE];
+//        _notificationView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+//    }
 #endif  
     
     [self saveConfigurationData];
@@ -475,8 +475,8 @@
 -(void) showPlayhavenAds
 {
 #ifdef PLAYHAVAN_TOKEN
-    PHPublisherContentRequest *request = [PHPublisherContentRequest requestForApp: PLAYHAVAN_TOKEN secret: PLAYHAVAN_SECRET placement:PLAYHAVAN_PLACE delegate:self];
-    [request send];
+//    PHPublisherContentRequest *request = [PHPublisherContentRequest requestForApp: PLAYHAVAN_TOKEN secret: PLAYHAVAN_SECRET placement:PLAYHAVAN_PLACE delegate:self];
+//    [request send];
 #endif
 }
 

@@ -32,7 +32,7 @@
 #endif
 
 #ifdef PLAYHAVAN_TOKEN
-#import "PlayHavenSDK.h"
+//#import "PlayHavenSDK.h"
 #endif
 
 
@@ -79,7 +79,7 @@ typedef enum {
 @interface AlexStartApplication : NSObject <SHKSharerDelegate, ChartboostDelegate>
 {
 #ifdef PLAYHAVAN_TOKEN
-    PHNotificationView *_notificationView;
+//    PHNotificationView *_notificationView;
 #endif
     
     NSString *mainLang;

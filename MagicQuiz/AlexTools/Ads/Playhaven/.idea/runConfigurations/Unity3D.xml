@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Unity3D" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="Unity3D" PROJECT_NAME="playhaven-sdk-ios" TARGET_NAME="PlayHaven" CONFIG_NAME="Release" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
-    <envs />
-    <method />
-  </configuration>
-</component>

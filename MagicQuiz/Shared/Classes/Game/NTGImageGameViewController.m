@@ -62,10 +62,10 @@
             [[MagicQuiz sharedInstance] showChartboostAdsWithName:@"GameStartScreen"];
         }
         
-        if(runCount%3 == 0)
-        {
-            [[MagicQuiz sharedInstance] showPlayhavenAds];
-        }
+//        if(runCount%3 == 0)
+//        {
+//            [[MagicQuiz sharedInstance] showPlayhavenAds];
+//        }
     }
     
 }
