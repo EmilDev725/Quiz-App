@@ -35,13 +35,13 @@ static id newMoveToSuperviewPlusSettingExclusiveTouch(id self,SEL selector,...)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    /*
-    [Appirater appLaunched:YES];
-    [Appirater setDaysUntilPrompt:1];
-    [Appirater setUsesUntilPrompt:2];
-    [Appirater setSignificantEventsUntilPrompt:-1];
-    [Appirater setTimeBeforeReminding:2];
-    [Appirater setDelegate:self];*/
+    
+//    [Appirater appLaunched:YES];
+//    [Appirater setDaysUntilPrompt:1];
+//    [Appirater setUsesUntilPrompt:2];
+//    [Appirater setSignificantEventsUntilPrompt:-1];
+//    [Appirater setTimeBeforeReminding:2];
+//    [Appirater setDelegate:self];
     
     
     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryAmbient error: nil];

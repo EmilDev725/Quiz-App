@@ -113,9 +113,7 @@
     
     if([VSUtils isConnectedToInternetWithMessage:@"Application is having trouble connecting to the server. Please check your internet connection"])
     {
-        
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=884588902&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software"]];
-        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/app/blabla/id884588902?action=write-review"]];
     }
 }
 
