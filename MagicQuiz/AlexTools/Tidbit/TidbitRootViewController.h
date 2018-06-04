@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "TidbitGame.h"
 #import "TidBitViewController.h"
+#import <GameKit/GameKit.h>
 
 @interface TidbitRootViewController : TidBitViewController <GameCenterMainDelegate, GKGameCenterControllerDelegate>
 {

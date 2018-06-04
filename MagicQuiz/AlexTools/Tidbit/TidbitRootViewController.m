@@ -48,7 +48,6 @@
     
     [Localization localizeView:self.view];
     
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -86,6 +85,7 @@
                 //[self showLoadingHUD];
                 
                 [[TidbitGame sharedInstance] setDelegate:self];
+                [[TidbitGame sharedInstance] setCurrentViewController: self];
                 [[TidbitGame sharedInstance] startGameKit:GC_MAIN];
             }
         }
@@ -260,7 +260,6 @@
     
     if([VSUtils isConnectedToInternetWithMessage:@"Application is having trouble connecting to the server. Please check your internet connection"])
     {
-        
         if([[TidbitGame sharedInstance] isUserLogin])
         {
             GKGameCenterViewController *achivements = [[GKGameCenterViewController alloc] init];

@@ -209,6 +209,9 @@ typedef enum {
 @property (nonatomic, retain) UIFont *mainFont;
 @property (nonatomic, retain) UIFont *mainFontIPad;
 
+@property (nonatomic, strong) UIViewController *currentViewController;
+
+
 
 #if defined GAME_CENTER
 // Game Center
@@ -271,5 +274,7 @@ typedef enum {
 - (void) postAppPromotionToVKontakteWithText:(NSString*) text;
 
 - (void) loadJSONDatabaseWithRootNode:(NSDictionary*) rootNode;
+
+- (void) setCurrentViewController:(UIViewController *)currentViewController;
 
 @end

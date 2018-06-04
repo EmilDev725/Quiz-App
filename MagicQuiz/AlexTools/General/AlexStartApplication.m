@@ -771,8 +771,11 @@
     localPlayer.authenticateHandler = ^(UIViewController * _Nullable viewController, NSError * _Nullable error) {
         if(error == nil)
         {
-            if (localPlayer.isAuthenticated)
-            {
+            if (viewController != nil) {
+                if (self.currentViewController != nil) {
+                    [_currentViewController presentViewController:viewController animated:YES completion:nil];
+                }
+            }else if (localPlayer.authenticated){
                 gcLoginWasCancelled = NO;
                 
                 if ([delegate respondsToSelector:@selector(userWasLogged:)])
@@ -827,6 +830,8 @@
                         }];
                     }
                 }
+            }else {
+                
             }
         }
         else
